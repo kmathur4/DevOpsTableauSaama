@@ -19,7 +19,7 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Snowflake Datasource' inline='true' name='sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3' version='18.1'>
+    <datasource caption='Snowflake Datasource' inline='true' name='sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7' version='18.1'>
       <repository-location id='SnowflakeDatasource' path='/t/demo27/datasources' revision='1.0' site='demo27' />
       <connection channel='https' class='sqlproxy' dbname='SnowflakeDatasource' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' username='kmathur'>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
@@ -687,7 +687,7 @@
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
               <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
 
-<datasource :source-version='18.1' formatted-name='Snowflake Datasource' inline='true' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<datasource :source-version='18.1' formatted-name='repoItem2562594056942367903' inline='true' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <ObjectModelEncapsulateLegacy />
     <ObjectModelTableType />
@@ -851,16 +851,16 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='Snowflake Datasource' name='sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3' />
+            <datasource caption='Snowflake Datasource' name='sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7' />
           </datasources>
-          <datasource-dependencies datasource='sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3'>
+          <datasource-dependencies datasource='sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7'>
             <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[CC_STREET_NAME]' derivation='None' name='[none:CC_STREET_NAME:nk]' pivot='key' type='nominal' />
             <column-instance column='[CC_DIVISION]' derivation='Sum' name='[sum:CC_DIVISION:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3].[none:CC_STREET_NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3].[sum:CC_DIVISION:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7].[none:CC_STREET_NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7].[sum:CC_DIVISION:qk]' shelf='rows' />
           </shelf-sorts>
           <aggregation value='true' />
         </view>
@@ -879,8 +879,8 @@
             </style>
           </pane>
         </panes>
-        <rows>[sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3].[none:CC_STREET_NAME:nk]</rows>
-        <cols>[sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3].[sum:CC_DIVISION:qk]</cols>
+        <rows>[sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7].[none:CC_STREET_NAME:nk]</rows>
+        <cols>[sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7].[sum:CC_DIVISION:qk]</cols>
       </table>
       <simple-id uuid='{62C97337-8E4C-4A7B-A18D-8A644AED6C4A}' />
     </worksheet>
@@ -910,7 +910,7 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[sqlproxy.1szlx9q1bt9r7n1dlvymx1o8a0g3].[none:CC_STREET_NAME:nk]</field>
+            <field>[sqlproxy.14xt5zt0e4umwt1abbvry0iay9n7].[none:CC_STREET_NAME:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
