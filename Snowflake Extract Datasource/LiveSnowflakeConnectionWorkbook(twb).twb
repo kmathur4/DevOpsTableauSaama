@@ -7,6 +7,7 @@
     <IntuitiveSorting_SP2 />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
@@ -27,6 +28,7 @@
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='column'>
             <remote-name>CC_CALL_CENTER_SK</remote-name>
@@ -636,6 +638,470 @@
       <column caption='Cc Tax Percentage' datatype='real' name='[CC_TAX_PERCENTAGE]' role='measure' type='quantitative' />
       <column caption='Cc Zip' datatype='string' name='[CC_ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
       <_.fcp.ObjectModelTableType.true...column caption='CALL_CENTER' datatype='table' name='[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/kmathur1/Documents/My Tableau Repository/Datasources/CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER) (TPCDS_SF10TCL).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='11/25/2020 05:51:26 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER) (TPCDS_SF10TCL)' increment-value='%null%' refresh-type='create' rows-inserted='54' timestamp-start='2020-11-25 05:51:26.067' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>CC_CALL_CENTER_SK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_CALL_CENTER_SK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_CALL_CENTER_SK</remote-alias>
+              <ordinal>0</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_CALL_CENTER_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_CALL_CENTER_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_CALL_CENTER_ID</remote-alias>
+              <ordinal>1</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_REC_START_DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[CC_REC_START_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_REC_START_DATE</remote-alias>
+              <ordinal>2</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_REC_END_DATE</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[CC_REC_END_DATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_REC_END_DATE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_CLOSED_DATE_SK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_CLOSED_DATE_SK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_CLOSED_DATE_SK</remote-alias>
+              <ordinal>4</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_OPEN_DATE_SK</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_OPEN_DATE_SK]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_OPEN_DATE_SK</remote-alias>
+              <ordinal>5</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_NAME</remote-alias>
+              <ordinal>6</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_CLASS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_CLASS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_CLASS</remote-alias>
+              <ordinal>7</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_EMPLOYEES</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_EMPLOYEES]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_EMPLOYEES</remote-alias>
+              <ordinal>8</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>40</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_SQ_FT</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_SQ_FT]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_SQ_FT</remote-alias>
+              <ordinal>9</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_HOURS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_HOURS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_HOURS</remote-alias>
+              <ordinal>10</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_MANAGER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_MANAGER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_MANAGER</remote-alias>
+              <ordinal>11</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_MKT_ID</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_MKT_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_MKT_ID</remote-alias>
+              <ordinal>12</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_MKT_CLASS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_MKT_CLASS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_MKT_CLASS</remote-alias>
+              <ordinal>13</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_MKT_DESC</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_MKT_DESC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_MKT_DESC</remote-alias>
+              <ordinal>14</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_MARKET_MANAGER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_MARKET_MANAGER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_MARKET_MANAGER</remote-alias>
+              <ordinal>15</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>43</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_DIVISION</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_DIVISION]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_DIVISION</remote-alias>
+              <ordinal>16</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_DIVISION_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_DIVISION_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_DIVISION_NAME</remote-alias>
+              <ordinal>17</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_COMPANY</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CC_COMPANY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_COMPANY</remote-alias>
+              <ordinal>18</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_COMPANY_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_COMPANY_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_COMPANY_NAME</remote-alias>
+              <ordinal>19</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_STREET_NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_STREET_NUMBER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_STREET_NUMBER</remote-alias>
+              <ordinal>20</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_STREET_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_STREET_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_STREET_NAME</remote-alias>
+              <ordinal>21</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_STREET_TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_STREET_TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_STREET_TYPE</remote-alias>
+              <ordinal>22</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_SUITE_NUMBER</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_SUITE_NUMBER]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_SUITE_NUMBER</remote-alias>
+              <ordinal>23</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_CITY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_CITY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_CITY</remote-alias>
+              <ordinal>24</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_COUNTY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_COUNTY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_COUNTY</remote-alias>
+              <ordinal>25</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_STATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_STATE</remote-alias>
+              <ordinal>26</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_ZIP</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_ZIP]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_ZIP</remote-alias>
+              <ordinal>27</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_COUNTRY</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CC_COUNTRY]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_COUNTRY</remote-alias>
+              <ordinal>28</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_GMT_OFFSET</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CC_GMT_OFFSET]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_GMT_OFFSET</remote-alias>
+              <ordinal>29</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CC_TAX_PERCENTAGE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CC_TAX_PERCENTAGE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CC_TAX_PERCENTAGE</remote-alias>
+              <ordinal>30</ordinal>
+              <family>CALL_CENTER</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
@@ -645,6 +1111,9 @@
           <object caption='CALL_CENTER' id='CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36'>
             <properties context=''>
               <relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
