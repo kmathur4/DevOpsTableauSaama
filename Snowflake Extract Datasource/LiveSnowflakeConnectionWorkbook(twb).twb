@@ -630,7 +630,7 @@
       <column caption='Cc Rec End Date' datatype='date' name='[CC_REC_END_DATE]' role='dimension' type='ordinal' />
       <column caption='Cc Rec Start Date' datatype='date' name='[CC_REC_START_DATE]' role='dimension' type='ordinal' />
       <column caption='Cc Sq Ft' datatype='integer' name='[CC_SQ_FT]' role='measure' type='quantitative' />
-      <column caption='Cc State' datatype='string' name='[CC_STATE]' role='dimension' type='nominal' />
+      <column caption='Cc State' datatype='string' name='[CC_STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
       <column caption='Cc Street Name' datatype='string' name='[CC_STREET_NAME]' role='dimension' type='nominal' />
       <column caption='Cc Street Number' datatype='string' name='[CC_STREET_NUMBER]' role='dimension' type='nominal' />
       <column caption='Cc Street Type' datatype='string' name='[CC_STREET_TYPE]' role='dimension' type='nominal' />
