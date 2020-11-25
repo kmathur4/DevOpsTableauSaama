@@ -19,9 +19,9 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='PackagedSnowflakeDatasource(.tdsx) | Project : Snowflake Extract Datasource' inline='true' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' version='18.1'>
-      <repository-location id='PackagedSnowflakeDatasource_tdsx' path='/t/demo27/datasources' revision='1.0' site='demo27' />
-      <connection channel='https' class='sqlproxy' dbname='PackagedSnowflakeDatasource_tdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' server-ds-friendly-name='PackagedSnowflakeDatasource(.tdsx) | Project : Snowflake Extract Datasource' username='kmathur'>
+    <datasource caption='PackagedSnowflakeDatasource(tdsx) | Project : Snowflake Extract Datasource' inline='true' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' version='18.1'>
+      <repository-location id='PackagedSnowflakeDatasourcetdsx' path='/t/demo27/datasources' revision='1.0' site='demo27' />
+      <connection channel='https' class='sqlproxy' dbname='PackagedSnowflakeDatasourcetdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' server-ds-friendly-name='PackagedSnowflakeDatasource(tdsx) | Project : Snowflake Extract Datasource' username='kmathur'>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <metadata-records>
@@ -650,15 +650,15 @@
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
               <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
 
-<datasource :source-version='18.1' formatted-name='PackagedSnowflakeDatasource(.tdsx)' inline='true' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<datasource :source-version='18.1' formatted-name='PackagedSnowflakeDatasource(tdsx)' inline='true' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <ObjectModelEncapsulateLegacy />
     <ObjectModelExtractV2 />
     <ObjectModelTableType />
     <SchemaViewerObjectModel />
   </document-format-change-manifest>
-  <repository-location id='PackagedSnowflakeDatasource_tdsx' path='/t/demo27/datasources' revision='1.0' site='demo27' />
-  <connection channel='https' class='sqlproxy' dbname='PackagedSnowflakeDatasource_tdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com'>
+  <repository-location id='PackagedSnowflakeDatasourcetdsx' path='/t/demo27/datasources' revision='1.0' site='demo27' />
+  <connection channel='https' class='sqlproxy' dbname='PackagedSnowflakeDatasourcetdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com'>
     <relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <cols>
       <map key='[CC_CALL_CENTER_ID]' value='[sqlproxy].[CC_CALL_CENTER_ID]' />
@@ -812,7 +812,7 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='PackagedSnowflakeDatasource(.tdsx) | Project : Snowflake Extract Datasource' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' />
+            <datasource caption='PackagedSnowflakeDatasource(tdsx) | Project : Snowflake Extract Datasource' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' />
           </datasources>
           <datasource-dependencies datasource='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g'>
             <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
