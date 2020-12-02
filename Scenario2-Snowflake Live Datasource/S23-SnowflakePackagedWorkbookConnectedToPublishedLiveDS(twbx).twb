@@ -1,0 +1,1141 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.1110.1614                               -->
+<workbook original-version='18.1' source-build='2020.2.8 (20202.20.1110.1614)' source-platform='win' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ISO8601DefaultCalendarPref />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='TableauSnowflakeWorkbook' path='/t/demo27/workbooks' revision='1.0' site='demo27' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='S21-SnowflakeLiveDatasource(tds) | Project : Scenario2-Snowflake Live Datasource' inline='true' name='sqlproxy.1ms88gq0cqcynd1byha2z1epapqb' version='18.1'>
+      <repository-location id='S21-SnowflakeLiveDatasourcetds' path='/t/demo27/datasources' revision='1.0' site='demo27' />
+      <connection channel='https' class='sqlproxy' dbname='S21-SnowflakeLiveDatasourcetds' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' server-ds-friendly-name='S21-SnowflakeLiveDatasource(tds) | Project : Scenario2-Snowflake Live Datasource' username='kmathur'>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>CC_CALL_CENTER_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_CALL_CENTER_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_CALL_CENTER_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Cc Call Center Id</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>16</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_CALL_CENTER_SK</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_CALL_CENTER_SK]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_CALL_CENTER_SK</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Cc Call Center Sk</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_CITY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_CITY]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_CITY</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <caption>Cc City</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_CLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_CLASS]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_CLASS</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <caption>Cc Class</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_CLOSED_DATE_SK</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_CLOSED_DATE_SK]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_CLOSED_DATE_SK</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <caption>Cc Closed Date Sk</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_COMPANY</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_COMPANY]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_COMPANY</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <caption>Cc Company</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_COMPANY_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_COMPANY_NAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_COMPANY_NAME</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <caption>Cc Company Name</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_COUNTRY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_COUNTRY]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_COUNTRY</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <caption>Cc Country</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_COUNTY</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_COUNTY]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_COUNTY</remote-alias>
+            <ordinal>26</ordinal>
+            <layered>true</layered>
+            <caption>Cc County</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>30</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_DIVISION</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_DIVISION]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_DIVISION</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <caption>Cc Division</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_DIVISION_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_DIVISION_NAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_DIVISION_NAME</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <caption>Cc Division Name</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_EMPLOYEES</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_EMPLOYEES]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_EMPLOYEES</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <caption>Cc Employees</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_GMT_OFFSET</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_GMT_OFFSET]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_GMT_OFFSET</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <caption>Cc Gmt Offset</caption>
+            <family>CALL_CENTER</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_HOURS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_HOURS]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_HOURS</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <caption>Cc Hours</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>20</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_MANAGER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_MANAGER]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_MANAGER</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <caption>Cc Manager</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_MARKET_MANAGER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_MARKET_MANAGER]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_MARKET_MANAGER</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <caption>Cc Market Manager</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>40</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_MKT_CLASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_MKT_CLASS]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_MKT_CLASS</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <caption>Cc Mkt Class</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_MKT_DESC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_MKT_DESC]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_MKT_DESC</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <caption>Cc Mkt Desc</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>100</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_MKT_ID</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_MKT_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_MKT_ID</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <caption>Cc Mkt Id</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_NAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_NAME</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Cc Name</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_OPEN_DATE_SK</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_OPEN_DATE_SK]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_OPEN_DATE_SK</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <caption>Cc Open Date Sk</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_REC_END_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CC_REC_END_DATE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_REC_END_DATE</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Cc Rec End Date</caption>
+            <family>CALL_CENTER</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_REC_START_DATE</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[CC_REC_START_DATE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_REC_START_DATE</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Cc Rec Start Date</caption>
+            <family>CALL_CENTER</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_SQ_FT</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_SQ_FT]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_SQ_FT</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <caption>Cc Sq Ft</caption>
+            <family>CALL_CENTER</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>38</precision>
+            <scale>0</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_STATE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_STATE</remote-alias>
+            <ordinal>27</ordinal>
+            <layered>true</layered>
+            <caption>Cc State</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_STREET_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_STREET_NAME]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_STREET_NAME</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <caption>Cc Street Name</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>60</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_STREET_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_STREET_NUMBER]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_STREET_NUMBER</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <caption>Cc Street Number</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_STREET_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_STREET_TYPE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_STREET_TYPE</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <caption>Cc Street Type</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_SUITE_NUMBER</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_SUITE_NUMBER]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_SUITE_NUMBER</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Cc Suite Number</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>CC_TAX_PERCENTAGE</remote-name>
+            <remote-type>131</remote-type>
+            <local-name>[CC_TAX_PERCENTAGE]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_TAX_PERCENTAGE</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <caption>Cc Tax Percentage</caption>
+            <family>CALL_CENTER</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>5</precision>
+            <scale>2</scale>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CC_ZIP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CC_ZIP]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>CC_ZIP</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <caption>Cc Zip</caption>
+            <family>CALL_CENTER</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>10</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_64BIT_CALCULATIONS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;<![CDATA[<?xml version='1.0' encoding='utf-8' ?>
+
+<datasource :source-version='18.1' formatted-name='repoItem11186367638944586340' inline='true' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+  </document-format-change-manifest>
+  <repository-location id='S21-SnowflakeLiveDatasourcetds' path='/t/demo27/datasources' revision='1.0' site='demo27' />
+  <connection channel='https' class='sqlproxy' dbname='S21-SnowflakeLiveDatasourcetds' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com'>
+    <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <cols>
+      <map key='[CC_CALL_CENTER_ID]' value='[sqlproxy].[CC_CALL_CENTER_ID]' />
+      <map key='[CC_CALL_CENTER_SK]' value='[sqlproxy].[CC_CALL_CENTER_SK]' />
+      <map key='[CC_CITY]' value='[sqlproxy].[CC_CITY]' />
+      <map key='[CC_CLASS]' value='[sqlproxy].[CC_CLASS]' />
+      <map key='[CC_CLOSED_DATE_SK]' value='[sqlproxy].[CC_CLOSED_DATE_SK]' />
+      <map key='[CC_COMPANY]' value='[sqlproxy].[CC_COMPANY]' />
+      <map key='[CC_COMPANY_NAME]' value='[sqlproxy].[CC_COMPANY_NAME]' />
+      <map key='[CC_COUNTRY]' value='[sqlproxy].[CC_COUNTRY]' />
+      <map key='[CC_COUNTY]' value='[sqlproxy].[CC_COUNTY]' />
+      <map key='[CC_DIVISION]' value='[sqlproxy].[CC_DIVISION]' />
+      <map key='[CC_DIVISION_NAME]' value='[sqlproxy].[CC_DIVISION_NAME]' />
+      <map key='[CC_EMPLOYEES]' value='[sqlproxy].[CC_EMPLOYEES]' />
+      <map key='[CC_GMT_OFFSET]' value='[sqlproxy].[CC_GMT_OFFSET]' />
+      <map key='[CC_HOURS]' value='[sqlproxy].[CC_HOURS]' />
+      <map key='[CC_MANAGER]' value='[sqlproxy].[CC_MANAGER]' />
+      <map key='[CC_MARKET_MANAGER]' value='[sqlproxy].[CC_MARKET_MANAGER]' />
+      <map key='[CC_MKT_CLASS]' value='[sqlproxy].[CC_MKT_CLASS]' />
+      <map key='[CC_MKT_DESC]' value='[sqlproxy].[CC_MKT_DESC]' />
+      <map key='[CC_MKT_ID]' value='[sqlproxy].[CC_MKT_ID]' />
+      <map key='[CC_NAME]' value='[sqlproxy].[CC_NAME]' />
+      <map key='[CC_OPEN_DATE_SK]' value='[sqlproxy].[CC_OPEN_DATE_SK]' />
+      <map key='[CC_REC_END_DATE]' value='[sqlproxy].[CC_REC_END_DATE]' />
+      <map key='[CC_REC_START_DATE]' value='[sqlproxy].[CC_REC_START_DATE]' />
+      <map key='[CC_SQ_FT]' value='[sqlproxy].[CC_SQ_FT]' />
+      <map key='[CC_STATE]' value='[sqlproxy].[CC_STATE]' />
+      <map key='[CC_STREET_NAME]' value='[sqlproxy].[CC_STREET_NAME]' />
+      <map key='[CC_STREET_NUMBER]' value='[sqlproxy].[CC_STREET_NUMBER]' />
+      <map key='[CC_STREET_TYPE]' value='[sqlproxy].[CC_STREET_TYPE]' />
+      <map key='[CC_SUITE_NUMBER]' value='[sqlproxy].[CC_SUITE_NUMBER]' />
+      <map key='[CC_TAX_PERCENTAGE]' value='[sqlproxy].[CC_TAX_PERCENTAGE]' />
+      <map key='[CC_ZIP]' value='[sqlproxy].[CC_ZIP]' />
+    </cols>
+  </connection>
+  <aliases enabled='yes' />
+  <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Call Center Sk' datatype='integer' default-type='quantitative' name='[CC_CALL_CENTER_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc City' datatype='string' default-type='nominal' name='[CC_CITY]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Class' datatype='string' default-type='nominal' name='[CC_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Closed Date Sk' datatype='integer' default-type='quantitative' name='[CC_CLOSED_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Company' datatype='integer' default-type='quantitative' name='[CC_COMPANY]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Company Name' datatype='string' default-type='nominal' name='[CC_COMPANY_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Country' datatype='string' default-type='nominal' name='[CC_COUNTRY]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc County' datatype='string' default-type='nominal' name='[CC_COUNTY]' pivot='key' role='dimension' semantic-role='[County].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Division Name' datatype='string' default-type='nominal' name='[CC_DIVISION_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Employees' datatype='integer' default-type='quantitative' name='[CC_EMPLOYEES]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Gmt Offset' datatype='real' default-type='quantitative' name='[CC_GMT_OFFSET]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Hours' datatype='string' default-type='nominal' name='[CC_HOURS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Manager' datatype='string' default-type='nominal' name='[CC_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Market Manager' datatype='string' default-type='nominal' name='[CC_MARKET_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Class' datatype='string' default-type='nominal' name='[CC_MKT_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Desc' datatype='string' default-type='nominal' name='[CC_MKT_DESC]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Id' datatype='integer' default-type='ordinal' name='[CC_MKT_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Name' datatype='string' default-type='nominal' name='[CC_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Open Date Sk' datatype='integer' default-type='quantitative' name='[CC_OPEN_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Year' caption='Cc Rec End Date' datatype='date' default-type='ordinal' name='[CC_REC_END_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+  <column aggregation='Year' caption='Cc Rec Start Date' datatype='date' default-type='ordinal' name='[CC_REC_START_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Sq Ft' datatype='integer' default-type='quantitative' name='[CC_SQ_FT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc State' datatype='string' default-type='nominal' name='[CC_STATE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Number' datatype='string' default-type='nominal' name='[CC_STREET_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Type' datatype='string' default-type='nominal' name='[CC_STREET_TYPE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Suite Number' datatype='string' default-type='nominal' name='[CC_SUITE_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Tax Percentage' datatype='real' default-type='quantitative' name='[CC_TAX_PERCENTAGE]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Zip' datatype='string' default-type='nominal' name='[CC_ZIP]' pivot='key' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='CALL_CENTER' datatype='table' default-type='quantitative' name='[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+  <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+  <object-graph>
+    <objects>
+      <object caption='CALL_CENTER' id='CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36'>
+        <properties context=''>
+          <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        </properties>
+      </object>
+    </objects>
+  </object-graph>
+</datasource>
+]]>&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;<![CDATA[<dialect-definition>
+  <primary-dialect class='snowflake' version='0.0.0'>
+  </primary-dialect>
+  <overlay-dialect-set>
+    <overlay-dialect class='vizengine' version='0.1.0'>
+    </overlay-dialect>
+  </overlay-dialect-set>
+</dialect-definition>
+]]>&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>false</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+        <default-calendar-type>Gregorian</default-calendar-type>
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' layered='true' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Call Center Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_CALL_CENTER_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc City' datatype='string' default-type='nominal' layered='true' name='[CC_CITY]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Class' datatype='string' default-type='nominal' layered='true' name='[CC_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Closed Date Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_CLOSED_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Company' datatype='integer' default-type='quantitative' layered='true' name='[CC_COMPANY]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Company Name' datatype='string' default-type='nominal' layered='true' name='[CC_COMPANY_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Country' datatype='string' default-type='nominal' layered='true' name='[CC_COUNTRY]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc County' datatype='string' default-type='nominal' layered='true' name='[CC_COUNTY]' pivot='key' role='dimension' semantic-role='[County].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Division Name' datatype='string' default-type='nominal' layered='true' name='[CC_DIVISION_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Employees' datatype='integer' default-type='quantitative' layered='true' name='[CC_EMPLOYEES]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Gmt Offset' datatype='real' default-type='quantitative' layered='true' name='[CC_GMT_OFFSET]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Hours' datatype='string' default-type='nominal' layered='true' name='[CC_HOURS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Manager' datatype='string' default-type='nominal' layered='true' name='[CC_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Market Manager' datatype='string' default-type='nominal' layered='true' name='[CC_MARKET_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Mkt Class' datatype='string' default-type='nominal' layered='true' name='[CC_MKT_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Mkt Desc' datatype='string' default-type='nominal' layered='true' name='[CC_MKT_DESC]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Mkt Id' datatype='integer' default-type='ordinal' layered='true' name='[CC_MKT_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Name' datatype='string' default-type='nominal' layered='true' name='[CC_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Open Date Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_OPEN_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Year' caption='Cc Rec End Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_END_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Year' caption='Cc Rec Start Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_START_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Sq Ft' datatype='integer' default-type='quantitative' layered='true' name='[CC_SQ_FT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc State' datatype='string' default-type='nominal' layered='true' name='[CC_STATE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Street Number' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Street Type' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_TYPE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Suite Number' datatype='string' default-type='nominal' layered='true' name='[CC_SUITE_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Cc Tax Percentage' datatype='real' default-type='quantitative' layered='true' name='[CC_TAX_PERCENTAGE]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc Zip' datatype='string' default-type='nominal' layered='true' name='[CC_ZIP]' pivot='key' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+      <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='CALL_CENTER' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='CALL_CENTER' id='CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36'>
+            <properties context=''>
+              <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Street Name by Division'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='S21-SnowflakeLiveDatasource(tds) | Project : Scenario2-Snowflake Live Datasource' name='sqlproxy.1ms88gq0cqcynd1byha2z1epapqb' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1ms88gq0cqcynd1byha2z1epapqb'>
+            <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[CC_STREET_NAME]' derivation='None' name='[none:CC_STREET_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CC_DIVISION]' derivation='Sum' name='[sum:CC_DIVISION:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[sqlproxy.1ms88gq0cqcynd1byha2z1epapqb].[none:CC_STREET_NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.1ms88gq0cqcynd1byha2z1epapqb].[sum:CC_DIVISION:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[sqlproxy.1ms88gq0cqcynd1byha2z1epapqb].[none:CC_STREET_NAME:nk]</rows>
+        <cols>[sqlproxy.1ms88gq0cqcynd1byha2z1epapqb].[sum:CC_DIVISION:qk]</cols>
+      </table>
+      <simple-id uuid='{62C97337-8E4C-4A7B-A18D-8A644AED6C4A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Street Name by Division'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1ms88gq0cqcynd1byha2z1epapqb].[none:CC_STREET_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{21B83F38-B546-4F7B-8AC0-5F16539400EF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Street Name by Division' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAgAElEQVR4nO29WWxkWXrn97tL3Nj3YHDf9z2XruoeqVuNUUlueGTZA5VhwJgZwE9+07Mw
+      mMcBDL/4wQYG8JsBWTNQjywLM7Dc3ZZKjW71Up0Lk0wm9z1IBskIxr5H3MUPkUtXVVZVFnmZ
+      DJL3V0Atkfd+9zunzv/cc757zncEwzAMLCzuKOJ1O2BhcZ1YArC401gCsLjTWAKwuNNYArC4
+      01gCsLjTWAKwuNPcOgGY/VlD13VTbeq6bpotaJbXTP/Mtgfml9lMe7JplkzG0HUQRQTeNGpB
+      EN78uWEAAr/1EwDpfJnNw7Rpfmi6hiRKLWvPoNkgJNGcvszAwNANRJPsQWvXYcsK4P/9qz/n
+      /j/7l3S6Df6fH/5H5n7w39DlsVFXdVxOB+nzBP5wFKPRoN5QcbqciILA3kmG//k//PK63be4
+      IbSsAHrGJ0js7+Dv8uBr60IAzk6OyOcLyL52yCdwh1z8/O+e0NMXQPJ1Mt7fcd1uW9wwWncO
+      IDqR9CrxszTdXW2ARiqZolarkcnmXl/W0d3P2MgIWq14fb5a3FhaVwBAV0jhIKvjlgVApVSq
+      oSjKF8b9FhYXRWjV1aCapiGKAppuIAqAIKKrKjoCkiQiGAaCKKLrBqIooBsGkiiSzBRZ2T83
+      z48WnsCB+ZPWV1GguzIJblkBXJRavU6tYV6RVFVFls2bKpltzzCMZhRIMqdBmG0PWrsOW3MS
+      bDRYWdtjemqMRGwb0d8Buk4k6PvaW5d3E/zbP//Fe3DS4jbQmnMAwUapmMXA4OgsQ8AFqXSB
+      xNEOj548ZXljl52NFSqqxt/95P9D1eqsrG1dt9cWN5DWFADQH7RzcJ4DxY2MRrXaYHNrF4/L
+      yfHeHg6HzNnRHqGAn53DM0TFfd0uW9xAWlYA0eExtn71DwQ7+1//5vf5aOvsYXZ2kvaOdl4s
+      7zI2P8Ph8wXautqv0VuLm0rrToINg/jxMe09PUh6g3ypgdcls7m5hb+th46In5OTOO0dnZye
+      nNLZ1YkA7MXT/O2n2ya6YXxmCUar2bsKm3fJXusK4IKYHXFoNBrIsmxahTcaDWw2mym2oNkY
+      NE0zrcyvFv+ZGQUyu8xm2mvNKNBbMHSV2PY69ugIHQHHb/1e5ziepqenuQxiPXbO//6fF8x7
+      bgv3Xm9sYurHQfPttW4d3hgB1ColXArE8zXavSKrKys0RBddIYlPP13hg9/5Hfq72qjWVQ4T
+      +et21+KGcGME4HD7UeoZ4gVQa2XOcxXm5sfwu6F/oEJ/V9t1u2hxA2nZKNBXITm8fPvhPBuL
+      CxQaBhjmblqxuDvcmDdAIZ1ge/eMspYi5RniPH6IO9KBR3ERcAscnqTo64pgt8l0RbzmPbjV
+      B9hXYfMO2bOiQF+DFQW6PHc2CpRLnXJ0miIY7aIr5CFdqBIKfHXvHI/tkCnW6ekfwueUyeaL
+      BAN+AA6Pjujt6fnK+4+SeX70m13TyqAbOqJg3kjRbHtgvIyKmGXTbHutXYdXKoBY/JSRsUn2
+      VhaQlDlkA7LZDOVcmprkYaA7yvHBNro9SG9HGEEQSKSzTE1O8enjp3zvdz7EoBkC3d3aZC2W
+      oKe7m9TpEWeZIn2DI0j1HHvxDGPjI9hEgfNcmR8/Mu9DmMXt5monwbpOtVJF10E06hzFk8T2
+      tpC8bZRPjzk53qGAl8rJDtl68xZNValUKsiyDUNrcHRyyt76CzztA3SEfdTyZ+yf1+kLKZyk
+      cyy+2GKoO8CLdfN6fYu7w5UKwNAbpFIpOkdnaXO/fNnIDiIBL4osky/mOYsfUmyoaA0NgEa1
+      zOLjT2nvG3ltp1KHoM+JLEnUy3mCbR1IkoQg1MkmU2zsHGJXzBtjWtwdrlQAbl+IwcFBwn4P
+      CBIupwOXy4UAOFwuuvtG8NhAsDlxKs1JV6Sjm9/76AeUTrcp1gxcTgddHSEWFxY4z5VxR3rJ
+      HCyzsrGNpjsZHunGQMDjdl1lUSxuKTcuCqSpFdZXtykW8wzPPiTidXzmz6u1OpW6ZtrzVFVD
+      ls3cHWWuPcMAXddM3RFm9pbIVq7DaxeAoeuvY7qvtuLpug6GgSCJ5DI5PC4bFU3G67K/Dvsh
+      CEii9IVw8Hm2yOpByjT/dE1DNDEkaLY9aNZbK+8JbuU6vPYPYbn4FqdCO91ykp++yPBf//5D
+      nj5dYri/B280QiwWY6Q7wGnNg8chUyiWcLk9GJoKokSlUsHpcFBvqCiKjf3TLP/LD3993cWy
+      uCFc+1KIQGcPhbM48WSVoaiTQiGF4ouQODnl8wOZlcWnnCbOWFhaYXdjhUKtyt/97Y8p1yu8
+      sLZEWlyAaxcAkhtBL1MzoDviZmPziLa2yFsvrQsyYyOj2PU64Yif2NYm43MTbKzv4g1ZO8Is
+      vjnXLwDAKTaoY8cbCBOLHRHyO99+naCx+HyJuuwgHO1ka2uf/sER4jvrdHaG3rPXFreBa58E
+      Q3MibCAgCjQTYUkiza9nAob+2c0Pmqa9/AYgoGvay+RYOqIkIdCcBK/H7lJ2aJMTY71cCmHm
+      0oVWrkMTBaDTaOjYbO9zXv3FZ1Zqdco11bQnaKqGZGIIz2x7GKDpOpJkYhToVSdkEq1chxdo
+      rVW2NpOMjvV+7vciaysp5u4NfuXd5+fnhMORr13NaugNNl68oGYPMD8+yM7aEplijVDXIEGh
+      SNkRpTuks7aSZO7e0Ov7VvasxFgW784FBKBRKdcAUKsFXqxtU23oPHjYXLqwtbJEpG+IndUV
+      NB3GpseInxQY6/awm6xDNYfPJfJkcRNZsTPU4aPs7CC/9wRf37coJfYYnZ5BQqBvaITtwzjo
+      Fc4LAh9+8AGPHz2iqOaJq6c4H4wQj+3SaCSI9I7T3xE0s24s7gCXes/pmoYB5LIpKjWN2NYz
+      imIYqZwkXVRxSFW2jspUiylOT04Jt4Wp1eocb22gKS7KmQRVu4fzo2MExUsxFaOqCsgCCKKM
+      w/5Sn3oDQXqZFVqAjq4eRidnCHkddPUNMTczTSlv3scvi7vDhQSgqg1qtRqJowNCPcN4XXbA
+      oHdkHi0fQ5XdhMIhBkZnGOkJE/XIbKfqhN0KAP5wmGCojem5ecL+MJT3kX19VLNnuAPNaI6h
+      69RqddRGAxUnRi1FPpvCkFzIiky1WKShNs+KsrKlW1yUC0yCNfa2tqmqOgNDI5wc7uMNRQj6
+      PVTKKk7FoFgXMKpZkrkaQ0P9oFXIFlQiIR+FQgGPx8Pp0T41HPT1dJA/P8MRbKeaO8fhDeFQ
+      JLRaiY2dAwCCbV2EPRL7hwkGR4aQ0Ynt7xHs6EbQwO2yUa7W8bhd7J+k+cljEzfEvEy/3qr2
+      DIOXSxfMsdlsDeamMWnlOmyJMKiZWFsiL4e1JfIaqVfyrG/sokt2pqfGsX0uFGcYGql0HodQ
+      p6YECHtU1tfSTEy+iUitHZzz7/7miWk+GRgIJg6yzLfX/LtZNl/1hmYOK1u5DltKAAcba3SO
+      PCSg6EhilUe/fIFoA9nhQEdmfmaCaqVA/GCDuOrhwwcjxHY2KZfP6BudJuJzUmuonKSt88Is
+      3o2WEkD/2ATPnj9Gcni5N9eD3RWlr0MnJ4SppA9oaAbpTIaOrh7c7h5CXoh2DTA92cbmYZyI
+      b/i6i2Bxw2iJtUCv0AWFhx98m6BQ5bxUb467BeEL429RFDA07fXkr/nXrZrKWLwnWuoNUC/n
+      WN88RXGGGXR7oV3B4TYQBDsuIYosCkSj7QSDPuKrG2S9w0TbgwiyQiTUDJ86FJn+dr9pPrVy
+      Yld4OWY30abZcwpo7Tq0okBfgxUFujy3Pwqk1lhd36Sh6Ug2F2G/g1BHL3apuaYnky0TCn22
+      V65X8mRKOu2RAMVMgp3YCTaHl4nxoa8dl9XKBVTJiduuchgr0Nv3JjFuLJHnb39t3uYY3TAQ
+      zYyJm2zP4OV3ADPfACb32K1ch+YIQFKYmJrm0W8e8+G3Z9ldWSJfqaE4vAx0RRBEg0I2TbVa
+      QXSFMEpJDg6PcEUGaY8EOI6dMjozi0MAo1FjY2sLf3sfEa9EqS5jF6o0BCeNaoF8OkP6bI/E
+      yyhQPHZILpdgeGICp00inS/z90/3TCmWxe3HnEmwICCKIsLLf+pqHXeog1zyGFVVOY7HOd5e
+      Y/+8jEfIsZdsMDEywOuPeXqNF8+XWN+JsbmyTLR/lKPNFUqlDKepEsXUCYlshYVPf47kDdPz
+      W2uBKnWd4YF2dvZiphTF4m5xJVEgyeYg4PMg296MI2WHh6mJUbRiFl+0C1GS30yzRDuz9+4x
+      NTpAXRfxOBV8io2q/lm7bT1D9LYHebkmDoBQKIRNtiN+YQexhcXXY6oAvL5m4luH240kgMvl
+      QRAEXC4Xzpe/OduHKBwssb61j01pLo5zetyvHenvibK4sEDJ7iXs8ZM93mQ7doZdkXC7m0eh
+      +tqiJHbXSBcauN0OECVczrdvo7Sw+CpuXRSoVm9QV/Wvv/AdebUFs1XtmW3zKvICtXIdtsx3
+      ALVRR9UM7HblSyMQ7xLizJWqvNg7N82vVv6fB+Y3WEsA10A5HWdhM0444KV/cBhBraIi4XHZ
+      qdVqVCo1fD4PP//HnzM/f49AIEillEd8mVO0rmo0Gioet4vYWY7/9f/6zXUXyeKG0BICWNs+
+      5NsffohNFKgVkjxbP8JhVOgen+f5008Z6mnnOOWnUatRLlfQqzkOkhW0SpG56R5+8tMVZu/P
+      WQlyLb4xLbEWSODNMtzceZJSpdpMrZ4t0dbZw+BgL1pNwx8K0dvTTS4Rp1qrUS+VKDY0+kem
+      Ge61EmNZfHNaQgCT4/18+stPWVhcQvG34ZQBxUs08NnMz1GvnceLy/g7+xG1Bu5gBLdNQn6v
+      qVgsbhO3LgqUypXYOs6YZq+VJ3AAGEZzi6CZeYHu0CT4xgqgUa8j2RQ+vzW0XK1RqDRMe46m
+      vqxsk5aymJ0kqnk+gImJsfSXArASY70fzg/2EaNdhJwK+cw5Dl8E5R3KtrexRt/UPI7PXbu6
+      n7QSY1m8M9cuALVeQ9SbL6F8MoHg8fDpT3+DL+TEFerDqWU4y5bp6hsksb+Jhki459XOryI/
+      /ckTfEEH4d4xBqwEuRbfkJaYBL9CbTQwMAhEOpm//wHVfJxktsbDhw/pcjfQvL08+NZ9zo+P
+      Xt5hEG7vY252mnLBvIS4FneHa38DgEGlXKbymaHMqwG3iCKqpNJZFNlGLX1IOmEgOd2gl75w
+      tYXFN+XaJ8H1coGDoxNsLh8dQQ+y00m1XMPtdlIqlXA5FGKxIyKdPUhqiZNUif7+bmrlEg6X
+      g3Kp8TIxVgO3y8nBaYa/f7pvmn9mnr91FfZMP9ndMJppR8w82b2F6/DaBWA21pbIy2FtiWwB
+      jvfWOctWkBQXs1NjpFNpIpHwO927sp/kf/vrxyZ6Y2B2mijzB22t7mPr2mtJARTKVabn7nG+
+      vcBxTsUoFznczxHtGSB/GsMWbGNvfQ3ZFWBqKMLG1gmqzcHc+CANVeM8V77uIljcEFoqCvQK
+      tVJk8ekT9tMabR6ZbDZD0GGwd5LlKJEme7BOoHsEoZgmWy4QO68yO/7VB3NYWLyNlhSA7PQw
+      PtwHog3p5ZvO0z5A+XQdye5HEiF+dIjgcKGIIt3d3VYkyOJCtOQQKBLtwBts5964QCKVo729
+      AwSJaCiIp3sAn6xSXN9AEx3YHT7aQ2907LTbGO4y76SYVk7q9NrmFSTcNXXE3sJ1aEWBvgYr
+      CnR57nwUqF4psLm1R7RnkLaQ90qHKwdnOf7TLzdNs2foBoKZB1qYbA9M7mGNl28UM3vsFq7D
+      9yAAnWcLz7n/7W+Ty2RJJsq0tUUpZM6xeYKcHmxhOIK0e2W2D+L0DI4gaxXS6RS65ESv5PF3
+      9BN2S2xsbhPq7CPoFMkXy1RUkYBD5+Akw9j4GHZZJFOo8LPFg6svlsWt4D1MggWiER/PFhYx
+      ZDv1dJzjXI2d3RiJ2DqSv5uuSABBstHRHmF15QWn8RjOYBfJ4z26Bgc53t9j7cULeoYnONle
+      5Tx1yuLaAW0RLyvr+4z2tbG6Yd6xSBZ3h6sXgAEDYzN868Ec2yvLdIxOcrK5jOTwoNVVfF43
+      DqeD7c0N6qrRPAlSUvC5nTi9ftwOBUkUUA0Jl0PG65Cp6TLjk5M4FYNMIsn6dgyX0/G1rlhY
+      fJ73MAQy2Fl7QaGu4Y92IokO5HqWyPgcEVuV5ZVnuINRPB4nqVQKxe7E7XIjieDxeAABj8dD
+      yCuz+PQZNleAQY+DqiQBTsbGeylUdZxWYiyLC/Deo0DFTILFzSN+99sPrmQyXG800A3zLJsd
+      VTLbnmEYL3eEmZQYS9fRTY4CtXIdfk4ABqraDKmpjQaiLKM2VBTlTcgplUoRDr/bupxX6JpK
+      uVJBsTtRrngD+1m6wNJOwjR7rbyfFazEWJflc62xzurKLnPzk2wtLdAz/wHVXJZIJEIuk0Jy
+      eDg8PiYcClKp1rErEul0Fl8wBJoK6NTqGorDgV0WqNQ0nA4bLxYXcPiCINnp7WzD4XCg1msI
+      NjvlfAZDcuC2i6SzBfzBEIKhUquUMSQ7er2MwxPAbhPJpFI4vQEUCVRNo67qOG0C2UKVUCiA
+      KAgcJnL8u78xczGcxW3mC91xNpVgb89BIpOnB5GTk2Pq+SQ5w0nQ1xxaHGytIvi7ycW38IY6
+      2D1YJmA3OC3WGB/qY3PvmIlOB/tFB9ODUTA0VENkuK+bveWntE8+5HBlmXA0xHlBJxL0Qx3q
+      9SrLK6t45Tq6I8zJ/iZDo6OkDhL47XVwhjjf2mOoL8TC6jFz9+dYW1ohGo2QyJaYGu557xVo
+      cbP5wnvO4XITDAZxO+2vfzvLV5kaGaQzGqacTbIVz9Hd5qdh2Bno78MlqtR1ifkH36I92onc
+      KLB3mmWgOwIIzD78Nl0hD48+fcLw5Cg76xvospNyLsfQyAjdnVESZ3GSyTSZXB5kB/29vYSj
+      7Qz092ITdYpVg8GBPjo8Irm6wPjMPF0RhfNEnmyhRKVsrQC1+OZ87g0g4HR5CAQCeFzNqIog
+      CAy0h/j14ye0tXfhDkaZ7w7z7MU2frvGk6dPQXYRsBlIUvNUx/7uCI82E0zbJDB0tteWKdZ1
+      FKcTyR6E/Kf4Rr9Lm1LkxcJjgm0dNCpVBNmF9PKgDQRef40UBIFIwM7Tpwuomsh4RKQsSYCL
+      zi4/BiJtEWtDvMU350qiQNnTAzK6l8GutzfKpWfPmLl/H3OThDdJ50vsneRMs9fKEzh4mRfI
+      0JGsSfCFeC9h0FqlRK5YIRQKIb8l4VIicUY0+uW5PcvFPPliGVG2E/Ip5EsQCrrfem08mePX
+      q3HTfG/l/axNTN4TbLq91q7DK/8Q1qhkePxsm8G+dkpVL7JaIlc16GwPo1ZLxM9SJFLnBP1e
+      4idJIh2d2AwNDY1yHcJ+D7tr6/h6elEMA7VeJHlu4FAM8rksLl+QXCZNe2c3iiwSTxX4858s
+      XXWxLG4JV74U4mRni+H5h3T39OGVqyyuH6Dmj9k7TrH0fBWP14NgQK1aw+vzsLKySiq2wy+e
+      PH/9mtPVBpl0mnzxTSqU1aVnYHPw6a9+hU3S2do7vOqiWNxCrlwANptMvd7M1VnNp8gVS5zn
+      azSKKWy+EOFQEMUmcnJ0wEEsRjpXACTmHjwk4GlOxG0ONyOjowz2dL62a3f7aWuLEO1oJxIM
+      IRjm5QO1uDtcuQDah6c4XX3Cs2cLlOUwEZeEIMqEoh0YhSRLS8tUVAFd1wERRVEQZRnpt9Z7
+      62qFtdVV1ncOEAQRWRZffwqXZRkEAUlqyc1tFi3OrdsRli9WOEmXvv7Cd8TsCIaqacgtHgXS
+      DcM0e2B+mc20d+O7zVK5hEORaWgSDnvrF+cubt43u8wRv4v2kNcUW1faYgrJI57vxPG43EzO
+      TKN8SafybGGBe/cf8FW78DZXVxiamEarnLF92KC73YnbF2J7e5uRnhDxkofR3iCbRykrPfot
+      5198NM1/99Esu7u7PHv2jImJCaanpy9k60oFsL57zHc+/BBJFMgnj3i8dYQuyHww1cnPHu3j
+      c+r0jU6wu7ONZPfQ4RfZPs4gyXbGIgaPD2oMDvQz2tdOo1Gn0aij1uuoqkHq7Aib+5utSrW4
+      PRiGwS9/+Us+/vhjlJcHrl+EK54EC6979XhsD8Fmp5ZKkFUN+obHmRntp67L9Pb2Mzs1xsHe
+      IYrdRjp1Rr2h0Tc6y2hf8wNZo1pka2uLnd0DNJoVYHF30TSN7e1t/uEf/oG//Mu/vHB7uFIB
+      dIXdvNjY5TB2iK+tE5/Xz/DEJB75s2Mdm2QQP0vS0RHF4wsyMTaOTRJwut7s8lKcPqamppkY
+      H76SJRQWNwtZlunr6+MP//AP0TTtwgK44iiQQT6boWFIhAI+cpkUhmTH73HQ0EVsgo6GiKA3
+      yOTLRMIBMqkUkt2NxyGiiw5sL1t7rVZFURwYhkq9YSCiISsO6vUqiiyh6iKKTbKWQrScPfPL
+      PNkXYmqwnXg8zuPHj7l37x79/f0XsnXrwqBWYqzLYSXGugIyiSP2js/RDJF787PYpM82puWl
+      ZWbmZxEMg8O9DZK5CpGOXvo6I1+wtby8xOzs/Jc+a2n7jP/p3//S9DJYtA7//e9P8d/+0xlT
+      bL0XAQTaurkf6WJt8SmFeo7D5V1Up5v+sJ2D0wzpXJkZmgvnTvMGH9y/D4bB/uYKqXyFrsEx
+      lHqW/ZMUqVyB8XKO1Y1dNFFhfryTpRcxbF4/c+ODGBiomv4+imVxTei6eYOW95MdWldZW17g
+      tNDAbYNkVuXBzChHZ1ke3L9Pe7D5UaNWKeJyB4Bmgta9w2M6O9vY3drh8DTF/fv36Aj7EAQJ
+      m00iHj+mXquQq8lWenSLC/FeBFAoFBmdecBwRCGRqxKNRhEEAV2tUVcblMpVAJzeMNnkIQ1N
+      o1KpIgoCCDZ6e7vQ1AYNVaVYqnC8t0m4d5Swv7knoC0avZNfWC0uz3sZAolorK8s4/R1MhQK
+      4aIGCExOjLG5sUXPQHMGLylu7k0PsbayQkfvIA/uzbN7eErPwDDRyTE21zfo6R+kM+RhY2uH
+      zt4BFGeA7ugbHftcdh6Od36JJ9+cVk7t3TRocjLbq0iOa3KZO8Ie02xZUaCvwYoCXZ5bEQWq
+      l7IUdQch75scnNmzA7ZPi0wOdfFidZuJuXv4nRd3LJuMsxuLoxkinb0D9LS/fU9xJZ+mLnvw
+      u1R2d3IMDb/p8XeOM/z7v39xYR8+T8u/AbiKAzLMtfc//lf36WkPkEgkqNfrhMPhlkll+c4C
+      qOWSnKgRjFKSw7MsI+PDPPnVM/xjY6wtPCKHD3SV9RdryN4IfREnyVyZcl3ALVZIZiqMTk5Q
+      SBxxmiowPD5BNnFEsVDEEWinvztKoK2LEa3McS1ATzTISWyHZL7O+MQ4p7FtiqUKoc5+khtP
+      iasePnwwwtHeHoVCgsGxKXwuG4VKjaWds6usM4tvSKXeQNM0/uqv/ooPP/wQj8fTMgL4ZpNg
+      vcp2LMX05CCb6/sMDA4xNT1FX28PoxOzFGIbuLpHMIpnJBIJVndP6etu4yAWp7u3B8UosX9W
+      ZnpiiLXVdU4TSQbHJsmeffHLraGXODgpMdITZHPviLPzNGOT05weHtDR1cPo5AwhrwPF5WNi
+      tI/DI2tLZCtTLpfRNI3j42NTh1eX5Z0F0GjUsUkCqeQJK6vb+IKBL1xTq1Q42NmgUBOxSTA4
+      Mopdlnnw8AGpo20OTs6RbHYkmwJ6cymD3Sa//TO5oXIWP2Jz7wSfx43d4cQmSYiiyMu0QQC4
+      XC4kUUbAiv23Ml6vlz/90z/lu9/9Lp988sl1u/OadxoC7W+tcl7UuXevHUdtgPNCFZui4AgG
+      kAGHx49glwnNzJFdWkOQbDhcPpBtgEFsf5dSQ2KorQexts3CwhIDo1OUc+cABH5LTDanF79s
+      B8nD9HgPhZqGotgIBpoH3wWDAQJtfg5erBNwjhIIehAkGb+3+S1BFAQcSutvjLlLiIJAIpHg
+      Zz/7GdVqlYcPH163S6+xokBfgxUFujy3Igp0JRgG+WyaYlUl2h5F/tzBZ41ShrzhJuxRqFYr
+      2O1ODKNBrW6A3kBxuDhPJgj6HBTrCiG/k7N0iV+8ODLNxRuxGlQ3EEyyabeJ/PHvjJli6yZw
+      vQLQG2QKJRTJYGFplamxAfRaGdkdpF445+RwD6ljlrBHYXdzk7GZedTyOZv7DQa6XMh2F6dn
+      p3hsIVIlDyG/k5N0gf/w98vXWqybjN9tfy2A7e1t/vqv/5o/+7M/u2avro7rPSleUvAoArHD
+      YyJtUVYWH7FzdE49G2cvUSLof5P+sF7Osfx8iRcrm6hA8uyIumYtgLgqNE1jYWGBjo6O63bl
+      SrlWARiGQai9h6mxYRKnJ9g9Ie7NTlDIFukb6MXreSMAxeVjenaW6anRm5/K4gbwySefMDc3
+      R61Wo16vX7c7V8a1tiW1VmRldRNDEPD5wxhqGUEQ6Ohu59HiAg6hRnC42QPZbAqiIGKIMorN
+      wCbZEASw2WwIovTWpLsWF6e7u5t4PM7e3h6pVIrOTvPWV7USty4KVChVSWTNOyyjlVN7Q3PZ
+      uK6blxhLFAX6or7XPl7kTLjPY0WBLkGjXkVDfufYvq7rVOqqac9vNljz+giz7YmCwFhP0PQw
+      6Csu2/hbnWsVQDK2ScXZSbB2wq8Oq/zgO5M8W1zn/v3Z19cU0yfkhTD97b632tC1MkvP97l/
+      fwqAreP0nUqM5bLL/J//5p9zcHDAkydPUFWVjz/+2NRvIbeZa62lYCTM4V6Sol6jwyNQLWaR
+      3T6S8QOOzlIYNg+Dkear7h9/+hO8gSia5CQk1YiMzbP9/BEd7UF2drYItbfR39V2ncW5Vvr6
+      +ujr6+PHP/4xp6en9PRYBwa+C9c6c5RdQYxKBhXo8khsHJwSikQpl0ogiGRT6dfX+sId3Lt3
+      D/kzadANgtFO+geG7nTjh2ZE7Uc/+hErKyu0td3tuvgmXHPoRMQuFKkLHgIdnTtK6k0AAA09
+      SURBVGyvH9AWdJLK5gkFfF+aK1SW4Si2TzyRRhBs1MsZUtnC+3W9xUin0/zBH/wB3//+91lZ
+      Wblud24M1x4FqtcqGKKCIouUymU8bjeNWoVipYHL6UCWBAxBQtdUFJuNeqOBLAlkc0XsTgcu
+      h4NKqYAuKnhcDk7O8zzeODHNP13TEU0MsZptT5YE/otvDXF2dsbCwgJer5fvfe97F4403bW1
+      QNcuALOxFsNdjrsmgBYOFRisLD6hYcgIioe5qdG3DomWlp4zPz/3+r8Xt0/vZBTI4mK0sABA
+      ExTu3ZtndfERmWyW2MEeKgrTQx1sbO8jeZqZ4/LJY1INO4NdX8wkZ2HxVbT0+oFSNsni4jOq
+      oheXXUQWRVKHRxTVKlVczIz2k0+dsrh5/NY0ihYWX0dLvwHcgTbm5pt5QDeWF+gamqJynsVA
+      JBIJIwjN8KhdqJPMlOgIvf3wbAuLL6OlBdDb2/v634fHxlnf3KJrbByf24fDLry+Juj3cJrM
+      AG78bgffmeo2zQfdMJoZ6lrUnmJrnQ3mNxErCvQ1WFGgy2NFgX6LWj7J8vYRik1hdGSIakMj
+      6Ptiqjujlue0JNH5cliTSiYJRtrQGyUyeQ2b1MDtC3Gwv0NPm4/zqpOeqJft4zR//hPzdoS1
+      emIsuyLxb/7ld1FVlXg8jsvlIhKx5kPvynsXQDV7QmRwjoGghFYrUtAMzk5PKOczeCOdnBwe
+      4PC34a4c8ovdKt/7zn06w37OTuL4w22o9Tzx0wa97TYMBEqlElrQTqXW7BGKlTor+8n3Xaxr
+      w/XyaNiTkxPOzs548eIFf/RHf0Q0Gr1mz24G1zIH2FxdouB3MdIbJJnVqZ6sE+6fQa5nKGp2
+      htojuGoN+gUnnWE/ALVyjqWlRfRaFtEzRPr8DLv/dm7SuAjd3d0cHBygaRperzln6N4FriUM
+      OjY1z+zMBPLLp9s8Qfq7IvijA0wNhFlcWEBF4NV5VQB2l5/5+XvMzoy39sz9mhAEgbm5OaLR
+      KMfHx9ftzo3hvbclxR3CozTHwKLNScCjY8ghQKBaTLN7cEywrQPZ34WytcBZ2kVH2EcgFEIQ
+      QJJdhIIqdhFkEULBELLixkfzrFhJFPE4L35u7E3j1RBoeXmZra0tCoWC9Qb4BlhRoK/BigJd
+      HisKdAEMQ+U4doyGQLSzA7XWwOv94ocuw9Aol+u43c1swyfpIj9fipnmR6snxrJJIn/yexOm
+      2btrtKwAoMjRYZ6xqR5kUaBcq1HCABrUDDuNQpKKYcevVPn5r1f54J98h65oiLN0kf/409Xr
+      dv694bLLlgAuQUuvBUonT4kdHlFTVY6PT4htrrC0GUNWC8TOS3hdCm5/kLZoO23Bt+8ZtrD4
+      KlpaAD2DY9ybn8XjaL6oBNnJg4fzeINthB0Ga2vbqIKEzaZgs7Xwy8yiZWlhAYgo9jeNWlEU
+      FEVBALRGlVKljiyJiKIdvZbmIH53Pn5ZmMetiwIVy1VShapp9jRVQ5JNTIxlsj0Bga6w24oC
+      XZCWHDfojQoVTcbt+PpCFgoFXA4bNU3C5bDR0HQyZgqgxTPDiUJTABYX41oFYBgqf/ef/xOz
+      3/9ndPodzd5HEFDzZxyU/Yx3+RBFCUGA9RfLjEzNolZO2Tpo0NvhxO0Ps7u3y0hPiHjJw2hv
+      kJ07mhhrf3+fp0+f0mg0+Pjjj03tcW8z1zoHKJ2fMHTvW5zEYqj1PL/4x1+xur6FZkBsZ4Nn
+      j37FcbqZ51Nt1CkUCxQLJTTd4NxKj/4Z+vv7+ZM/+RN8Ph+JROK63bkxXKsADg4OOE+kOD4+
+      RJAd+Nx2GqqKYRj0j0wwPTlIqdgczmiNGomzM5LnKes4vLfwKjHW+vr6rc/naSbXJgBDb1CX
+      A3zngwd8a7iNo0wFlz+IVi1SbXyxidscboaHRxgc6MXaA/VFzs/P+eijj/jud7/L2tradbtz
+      Y7i2KJBh6DRUDcVmw9BUGoZAo1oGyYbLLqMaIrJgoOkCsiy+XJNjA0ND1QwEDETZhqY2kCQR
+      3RCQJZHTVJ6FLfMOym71pRCyJPD79wdIJpM8ffoUv9/P7/7u7174GXctCtQiYVADXW/mpr/s
+      fY2GypfmVLwAZi+u0zUNu9281arWYrjL8V6iQFqjyvLzZQzBxsj0DF775x9b48XyPnPzX76m
+      JXm8x2EiS7i9B79YoeKI0BnQePE8ydy9odfXLe20dmKs70x28q//1fdJpVJ8+umnDA4OMjk5
+      aeo2SYt3570I4GhrjejwLF0BB4ZW48lvnoBkZ3p+loP1Zaq6Rl3zkDje4/gsjTvUCWqJei5N
+      29AM7QGF3ViCgaFBAqEgG48WiavH2B+MEI/t0mic0zEwQXfbzVkPlEgk+Oijj/iLv/gLxsbG
+      rHz+18R7mQQXiw18PgcA2cN1SnIAOxW2NzdRXVHuzc/gkEAQJQRR4ugoRjl7TufoHO1BN2hV
+      svkKqlrj0ZNndHT1MDo5Q8jroLNviLmZCbKZm7UUYmJigidPnhCNRk0dblh8M96LADq6Amxv
+      HdKolhEcbmRBpL2rn672EOVCnmoxT03T2Y+dMT46hE0SQHET9jXX+CO78XtsRNraEQ0VSZZQ
+      a3V03UCguRxAoAWmMt+ATz75BEVR+OM//mNr+HONvJdJsGEYJOMxErkqo2OjpON7ZCowOjLY
+      zOtZ1mgLhhC1EvFMlbawH0kUCQYCr200KgXWt/bpHxnH6xDY2tgk2jcAdQOfz06hVMXv87J9
+      dM7f/OOmib7rCIJ5/cRIl59//ntT/PCHP8ThcGC32/nBD35w4aiNNQm+HC0SBTIPa0vk5bhr
+      AriymVc+dcr2wQmSrDA6MUE1n8EfibzlI1aZ7c0MI2Nv0hnmknF2js6QZDtjE+NUchkCkchb
+      xmtltjezjIx1vf5l8yjF//Gj56aVw+xEVtMDYf6H//KBafYsLseVCSCXydI/PoWzfsb6Zpyu
+      sIxQL7B3kqFU1egNO9g9PKVvuIej/R2KpQR9I1OEvHYy6SxDkzNIxSM2t09pD4hQy7N7mqVS
+      0+kOKuwdndE/0sPh3g7F0hn9Y1ME3XbK1Qabh6mrKtalCXnuTsaKm8DVTYL1BmvLz/nNk3V6
+      +9s5TyTR6yWWt48ZG+xmcz/O3Pw8Abcdtz/C9OQo8aOD5r1andXnSzx+tkV3X5TzRBKjXuTF
+      zgmjA51sHZwxNz+H36XgCUSYGhskbuXCsbgAVxd8Fm1Mzo7hEyssrW/jeCm1voEhFFlEFCVE
+      QcAQBOx2O6IowatIjqQwNTeNU82xsrPHqz7z9b2ShCiI8Fv3CtYSOYsLcGUC8HjcbK+vIBo6
+      QxOzVLPnCDYXYR8gygx2hXn2bJG+4QFCYR+CKBEKNqM+Xq+b7dVlBMNgaGKGSubVvTKINvo7
+      Ajx7tkj/6GDzXtlG0N9MoShLEkGvw7RyGIapKytw36GkXTcBKwr0NVhRoMtzJ6NAZlMulXC6
+      3Bh6nUrNAK2G3e0lcXZCxO8iX7cTCTiJpwr89NmBac/tDLn5ww9GTLNn0VrcGAHs72wzNjOP
+      Wkmxvd9goNuFYkAymcRvD5EpGUQCThKZEv/3z9dNe+6D0XZLALeYGyOAz6dHT54e0em2DoKw
+      uBw3RgB2l7/5BiifsLHfuG53LG4JN0cADjsAgijjsIMiORAEmmFQSUYxMdeOxd3h1kWBSuUq
+      6aJ5eYFskkBb4ItnmF0Us/MCgbnbLA2jeSiJmds2Wzm30q0TgKqqLVvZV2HPMAx0XTfN5l0T
+      wI0ZAr0rgiCYunjtVUMwy6bZ/kHTR7NtmmnP7DKbae/WvQEsLL4JLZwd2sLi6rmVAjC0GsuL
+      z1hZ30W/xPtNrVd4/vgZFZNektnzU5YWF1nd2jdlA2elkGJpcYnF5yvUVXMWA6q1Eo8WTNpP
+      YWisLD5lcXGRZLZkislS7pzFxUViJ5ffA25o9dspgNjaC0JDU3gpcJIpX9hOuVTGpmvUTPJL
+      UlzMzM3TOI9TNqG9Kk4fM3OztLt0js6LlzdoGGxtbFAomdNYdbVOXXJw79492gImZLA2NNY3
+      D5iZnaM7Grq0OUFSbqcA0iWNsM+Oz++hmL+4AHzBMC4Tk1h5vB62V54hBDtwmVDzkmxjd22R
+      Z9sJOiOXD9UWUkfg7cRtN6lZiBKKXufJb37FZsyEhL1qjcR5khfPn/HrJ88x48V8KwUQ8dlI
+      Zitkc0W8/tbJnb+1/BRn+zBzE0OYEcOoVasMTd7jn8z3sx+7/JDg9CxFJXdG7OCAk/Pc5R3U
+      NPrGppmfHSOXylzenqwQCgSZmbuHzaiZMoy8lVEgQ6uztrKK4AoyPtzPN864+JLE8T77BydI
+      bjeTkzO4lMv1F1urSxTrBpJkZ3J6Etslu598+oy9wxNE2cHY+Bh22Zz+7PDoiN6enkvb0RtV
+      Nre2qakwPDbx+qy3y1DMJNg+OCbS2U93e+jSHcmtFICFxbtyK4dAFhbviiUAizuNJQCLO40l
+      AIs7jSUAizuNJQCLO40lAIs7jSUAizuNJQCLO40lAIs7jSUAizvN/w+Jj1dUws5tUQAAAABJ
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
