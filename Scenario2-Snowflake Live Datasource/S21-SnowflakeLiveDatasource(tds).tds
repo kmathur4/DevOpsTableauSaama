@@ -1,460 +1,56 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20202.20.1020.1112                               -->
-<datasource formatted-name='Snowflake Datasource (local copy)' inline='true' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20204.20.1106.0321                               -->
+<datasource formatted-name='sqlproxy.1em5lqu0fc8mkc1du4mfx19f93r1' inline='true' source-platform='win' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
+    <ISO8601DefaultCalendarPref />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
   </document-format-change-manifest>
-  <connection class='federated'>
-    <named-connections>
-      <named-connection caption='yn22489.ap-south-1.aws.snowflakecomputing.com' name='snowflake.0xwys441ecf27e14hkeuy13vhhkq'>
-        <connection authentication='Username Password' class='snowflake' dbname='SNOWFLAKE_SAMPLE_DATA' odbc-connect-string-extras='' one-time-sql='' port='0' schema='TPCDS_SF10TCL' server='yn22489.ap-south-1.aws.snowflakecomputing.com' server-oauth='' server-userid='125483' service='' username='kmathur' warehouse='COMPUTE_WH' workgroup-auth-mode='prompt' />
-      </named-connection>
-    </named-connections>
-    <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
-    <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
+  <repository-location id='S21-SnowflakeLiveDatasourcetds' path='/t/devopswithtableau/datasources' revision='1.1' site='devopswithtableau' />
+  <connection channel='https' class='sqlproxy' dbname='S21-SnowflakeLiveDatasourcetds' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' username=''>
+    <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <metadata-records>
-      <metadata-record class='column'>
-        <remote-name>CC_CALL_CENTER_SK</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_CALL_CENTER_SK]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_CALL_CENTER_SK</remote-alias>
-        <ordinal>1</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>false</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
       <metadata-record class='column'>
         <remote-name>CC_CALL_CENTER_ID</remote-name>
         <remote-type>129</remote-type>
         <local-name>[CC_CALL_CENTER_ID]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
+        <parent-name>[sqlproxy]</parent-name>
         <remote-alias>CC_CALL_CENTER_ID</remote-alias>
         <ordinal>2</ordinal>
+        <layered>true</layered>
+        <caption>Cc Call Center Id</caption>
+        <family>CALL_CENTER</family>
         <local-type>string</local-type>
         <aggregation>Count</aggregation>
         <width>16</width>
         <contains-null>false</contains-null>
         <collation flag='0' name='binary' />
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_REC_START_DATE</remote-name>
-        <remote-type>7</remote-type>
-        <local-name>[CC_REC_START_DATE]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_REC_START_DATE</remote-alias>
-        <ordinal>3</ordinal>
-        <local-type>date</local-type>
-        <aggregation>Year</aggregation>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_REC_END_DATE</remote-name>
-        <remote-type>7</remote-type>
-        <local-name>[CC_REC_END_DATE]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_REC_END_DATE</remote-alias>
-        <ordinal>4</ordinal>
-        <local-type>date</local-type>
-        <aggregation>Year</aggregation>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_CLOSED_DATE_SK</remote-name>
+      <metadata-record class='measure'>
+        <remote-name>CC_CALL_CENTER_SK</remote-name>
         <remote-type>131</remote-type>
-        <local-name>[CC_CLOSED_DATE_SK]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_CLOSED_DATE_SK</remote-alias>
-        <ordinal>5</ordinal>
+        <local-name>[CC_CALL_CENTER_SK]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_CALL_CENTER_SK</remote-alias>
+        <ordinal>1</ordinal>
+        <layered>true</layered>
+        <caption>Cc Call Center Sk</caption>
+        <family>CALL_CENTER</family>
         <local-type>integer</local-type>
         <aggregation>Sum</aggregation>
         <precision>38</precision>
         <scale>0</scale>
-        <contains-null>true</contains-null>
+        <contains-null>false</contains-null>
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_OPEN_DATE_SK</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_OPEN_DATE_SK]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_OPEN_DATE_SK</remote-alias>
-        <ordinal>6</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_NAME</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_NAME]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_NAME</remote-alias>
-        <ordinal>7</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>50</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_CLASS</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_CLASS]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_CLASS</remote-alias>
-        <ordinal>8</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>50</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_EMPLOYEES</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_EMPLOYEES]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_EMPLOYEES</remote-alias>
-        <ordinal>9</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_SQ_FT</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_SQ_FT]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_SQ_FT</remote-alias>
-        <ordinal>10</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_HOURS</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_HOURS]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_HOURS</remote-alias>
-        <ordinal>11</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>20</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_MANAGER</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_MANAGER]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_MANAGER</remote-alias>
-        <ordinal>12</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>40</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_MKT_ID</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_MKT_ID]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_MKT_ID</remote-alias>
-        <ordinal>13</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_MKT_CLASS</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_MKT_CLASS]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_MKT_CLASS</remote-alias>
-        <ordinal>14</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>50</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_MKT_DESC</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_MKT_DESC]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_MKT_DESC</remote-alias>
-        <ordinal>15</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>100</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_MARKET_MANAGER</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_MARKET_MANAGER]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_MARKET_MANAGER</remote-alias>
-        <ordinal>16</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>40</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_DIVISION</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_DIVISION]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_DIVISION</remote-alias>
-        <ordinal>17</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_DIVISION_NAME</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_DIVISION_NAME]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_DIVISION_NAME</remote-alias>
-        <ordinal>18</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>50</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_COMPANY</remote-name>
-        <remote-type>131</remote-type>
-        <local-name>[CC_COMPANY]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_COMPANY</remote-alias>
-        <ordinal>19</ordinal>
-        <local-type>integer</local-type>
-        <aggregation>Sum</aggregation>
-        <precision>38</precision>
-        <scale>0</scale>
-        <contains-null>true</contains-null>
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_COMPANY_NAME</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_COMPANY_NAME]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_COMPANY_NAME</remote-alias>
-        <ordinal>20</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>50</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_STREET_NUMBER</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_STREET_NUMBER]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_STREET_NUMBER</remote-alias>
-        <ordinal>21</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>10</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_STREET_NAME</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_STREET_NAME]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_STREET_NAME</remote-alias>
-        <ordinal>22</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>60</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_STREET_TYPE</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_STREET_TYPE]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_STREET_TYPE</remote-alias>
-        <ordinal>23</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>15</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_SUITE_NUMBER</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_SUITE_NUMBER]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_SUITE_NUMBER</remote-alias>
-        <ordinal>24</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>10</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
@@ -462,75 +58,102 @@
         <remote-name>CC_CITY</remote-name>
         <remote-type>129</remote-type>
         <local-name>[CC_CITY]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
+        <parent-name>[sqlproxy]</parent-name>
         <remote-alias>CC_CITY</remote-alias>
         <ordinal>25</ordinal>
+        <layered>true</layered>
+        <caption>Cc City</caption>
+        <family>CALL_CENTER</family>
         <local-type>string</local-type>
         <aggregation>Count</aggregation>
         <width>60</width>
         <contains-null>true</contains-null>
         <collation flag='0' name='binary' />
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
       <metadata-record class='column'>
-        <remote-name>CC_COUNTY</remote-name>
+        <remote-name>CC_CLASS</remote-name>
         <remote-type>129</remote-type>
-        <local-name>[CC_COUNTY]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_COUNTY</remote-alias>
-        <ordinal>26</ordinal>
+        <local-name>[CC_CLASS]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_CLASS</remote-alias>
+        <ordinal>8</ordinal>
+        <layered>true</layered>
+        <caption>Cc Class</caption>
+        <family>CALL_CENTER</family>
         <local-type>string</local-type>
         <aggregation>Count</aggregation>
-        <width>30</width>
+        <width>50</width>
         <contains-null>true</contains-null>
         <collation flag='0' name='binary' />
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_CLOSED_DATE_SK</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_CLOSED_DATE_SK]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_CLOSED_DATE_SK</remote-alias>
+        <ordinal>5</ordinal>
+        <layered>true</layered>
+        <caption>Cc Closed Date Sk</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_COMPANY</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_COMPANY]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_COMPANY</remote-alias>
+        <ordinal>19</ordinal>
+        <layered>true</layered>
+        <caption>Cc Company</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
       <metadata-record class='column'>
-        <remote-name>CC_STATE</remote-name>
+        <remote-name>CC_COMPANY_NAME</remote-name>
         <remote-type>129</remote-type>
-        <local-name>[CC_STATE]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_STATE</remote-alias>
-        <ordinal>27</ordinal>
+        <local-name>[CC_COMPANY_NAME]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_COMPANY_NAME</remote-alias>
+        <ordinal>20</ordinal>
+        <layered>true</layered>
+        <caption>Cc Company Name</caption>
+        <family>CALL_CENTER</family>
         <local-type>string</local-type>
         <aggregation>Count</aggregation>
-        <width>2</width>
+        <width>50</width>
         <contains-null>true</contains-null>
         <collation flag='0' name='binary' />
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-        </attributes>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-      </metadata-record>
-      <metadata-record class='column'>
-        <remote-name>CC_ZIP</remote-name>
-        <remote-type>129</remote-type>
-        <local-name>[CC_ZIP]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
-        <remote-alias>CC_ZIP</remote-alias>
-        <ordinal>28</ordinal>
-        <local-type>string</local-type>
-        <aggregation>Count</aggregation>
-        <width>10</width>
-        <contains-null>true</contains-null>
-        <collation flag='0' name='binary' />
-        <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
@@ -538,92 +161,565 @@
         <remote-name>CC_COUNTRY</remote-name>
         <remote-type>129</remote-type>
         <local-name>[CC_COUNTRY]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
+        <parent-name>[sqlproxy]</parent-name>
         <remote-alias>CC_COUNTRY</remote-alias>
         <ordinal>29</ordinal>
+        <layered>true</layered>
+        <caption>Cc Country</caption>
+        <family>CALL_CENTER</family>
         <local-type>string</local-type>
         <aggregation>Count</aggregation>
         <width>20</width>
         <contains-null>true</contains-null>
         <collation flag='0' name='binary' />
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-          <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
       <metadata-record class='column'>
+        <remote-name>CC_COUNTY</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_COUNTY]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_COUNTY</remote-alias>
+        <ordinal>26</ordinal>
+        <layered>true</layered>
+        <caption>Cc County</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>30</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_DIVISION</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_DIVISION]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_DIVISION</remote-alias>
+        <ordinal>17</ordinal>
+        <layered>true</layered>
+        <caption>Cc Division</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_DIVISION_NAME</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_DIVISION_NAME]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_DIVISION_NAME</remote-alias>
+        <ordinal>18</ordinal>
+        <layered>true</layered>
+        <caption>Cc Division Name</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>50</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_EMPLOYEES</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_EMPLOYEES]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_EMPLOYEES</remote-alias>
+        <ordinal>9</ordinal>
+        <layered>true</layered>
+        <caption>Cc Employees</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
         <remote-name>CC_GMT_OFFSET</remote-name>
         <remote-type>131</remote-type>
         <local-name>[CC_GMT_OFFSET]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
+        <parent-name>[sqlproxy]</parent-name>
         <remote-alias>CC_GMT_OFFSET</remote-alias>
         <ordinal>30</ordinal>
+        <layered>true</layered>
+        <caption>Cc Gmt Offset</caption>
+        <family>CALL_CENTER</family>
         <local-type>real</local-type>
         <aggregation>Sum</aggregation>
         <precision>5</precision>
         <scale>2</scale>
         <contains-null>true</contains-null>
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
       <metadata-record class='column'>
+        <remote-name>CC_HOURS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_HOURS]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_HOURS</remote-alias>
+        <ordinal>11</ordinal>
+        <layered>true</layered>
+        <caption>Cc Hours</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>20</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_MANAGER</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_MANAGER]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_MANAGER</remote-alias>
+        <ordinal>12</ordinal>
+        <layered>true</layered>
+        <caption>Cc Manager</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>40</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_MARKET_MANAGER</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_MARKET_MANAGER]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_MARKET_MANAGER</remote-alias>
+        <ordinal>16</ordinal>
+        <layered>true</layered>
+        <caption>Cc Market Manager</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>40</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_MKT_CLASS</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_MKT_CLASS]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_MKT_CLASS</remote-alias>
+        <ordinal>14</ordinal>
+        <layered>true</layered>
+        <caption>Cc Mkt Class</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>50</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_MKT_DESC</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_MKT_DESC]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_MKT_DESC</remote-alias>
+        <ordinal>15</ordinal>
+        <layered>true</layered>
+        <caption>Cc Mkt Desc</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>100</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_MKT_ID</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_MKT_ID]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_MKT_ID</remote-alias>
+        <ordinal>13</ordinal>
+        <layered>true</layered>
+        <caption>Cc Mkt Id</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Count</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>1</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_NAME</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_NAME]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_NAME</remote-alias>
+        <ordinal>7</ordinal>
+        <layered>true</layered>
+        <caption>Cc Name</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>50</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_OPEN_DATE_SK</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_OPEN_DATE_SK]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_OPEN_DATE_SK</remote-alias>
+        <ordinal>6</ordinal>
+        <layered>true</layered>
+        <caption>Cc Open Date Sk</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_REC_END_DATE</remote-name>
+        <remote-type>7</remote-type>
+        <local-name>[CC_REC_END_DATE]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_REC_END_DATE</remote-alias>
+        <ordinal>4</ordinal>
+        <layered>true</layered>
+        <caption>Cc Rec End Date</caption>
+        <family>CALL_CENTER</family>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>1</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_REC_START_DATE</remote-name>
+        <remote-type>7</remote-type>
+        <local-name>[CC_REC_START_DATE]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_REC_START_DATE</remote-alias>
+        <ordinal>3</ordinal>
+        <layered>true</layered>
+        <caption>Cc Rec Start Date</caption>
+        <family>CALL_CENTER</family>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>1</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
+        <remote-name>CC_SQ_FT</remote-name>
+        <remote-type>131</remote-type>
+        <local-name>[CC_SQ_FT]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_SQ_FT</remote-alias>
+        <ordinal>10</ordinal>
+        <layered>true</layered>
+        <caption>Cc Sq Ft</caption>
+        <family>CALL_CENTER</family>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>38</precision>
+        <scale>0</scale>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='field-type'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_STATE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_STATE]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_STATE</remote-alias>
+        <ordinal>27</ordinal>
+        <layered>true</layered>
+        <caption>Cc State</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>2</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_STREET_NAME</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_STREET_NAME]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_STREET_NAME</remote-alias>
+        <ordinal>22</ordinal>
+        <layered>true</layered>
+        <caption>Cc Street Name</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>60</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_STREET_NUMBER</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_STREET_NUMBER]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_STREET_NUMBER</remote-alias>
+        <ordinal>21</ordinal>
+        <layered>true</layered>
+        <caption>Cc Street Number</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>10</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_STREET_TYPE</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_STREET_TYPE]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_STREET_TYPE</remote-alias>
+        <ordinal>23</ordinal>
+        <layered>true</layered>
+        <caption>Cc Street Type</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>15</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_SUITE_NUMBER</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_SUITE_NUMBER]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_SUITE_NUMBER</remote-alias>
+        <ordinal>24</ordinal>
+        <layered>true</layered>
+        <caption>Cc Suite Number</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>10</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='measure'>
         <remote-name>CC_TAX_PERCENTAGE</remote-name>
         <remote-type>131</remote-type>
         <local-name>[CC_TAX_PERCENTAGE]</local-name>
-        <parent-name>[CALL_CENTER]</parent-name>
+        <parent-name>[sqlproxy]</parent-name>
         <remote-alias>CC_TAX_PERCENTAGE</remote-alias>
         <ordinal>31</ordinal>
+        <layered>true</layered>
+        <caption>Cc Tax Percentage</caption>
+        <family>CALL_CENTER</family>
         <local-type>real</local-type>
         <aggregation>Sum</aggregation>
         <precision>5</precision>
         <scale>2</scale>
         <contains-null>true</contains-null>
         <attributes>
-          <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DECIMAL&quot;</attribute>
-          <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_NUMERIC&quot;</attribute>
+          <attribute datatype='integer' name='field-type'>0</attribute>
         </attributes>
         <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
       </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>CC_ZIP</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[CC_ZIP]</local-name>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias>CC_ZIP</remote-alias>
+        <ordinal>28</ordinal>
+        <layered>true</layered>
+        <caption>Cc Zip</caption>
+        <family>CALL_CENTER</family>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <width>10</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='binary' />
+        <attributes>
+          <attribute datatype='integer' name='field-type'>2</attribute>
+          <attribute datatype='integer' name='role'>0</attribute>
+        </attributes>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[sqlproxy]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='boolean' name='CAP_64BIT_CALCULATIONS'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>false</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_TOP_N'>true</attribute>
+          <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+          <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+          <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+          <attribute datatype='integer' name='charset'>0</attribute>
+          <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+          <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;S21-SnowflakeLiveDatasource(tds)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://prod-apnortheast-a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;document-format-change-manifest&gt;&#10;    &lt;_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy /&gt;&#10;    &lt;_.fcp.ObjectModelTableType.true...ObjectModelTableType /&gt;&#10;    &lt;_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel /&gt;&#10;  &lt;/document-format-change-manifest&gt;&#10;  &lt;repository-location id=&apos;S21-SnowflakeLiveDatasourcetds&apos; path=&apos;/t/devopswithtableau/datasources&apos; revision=&apos;1.1&apos; site=&apos;devopswithtableau&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;S21-SnowflakeLiveDatasourcetds&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;prod-apnortheast-a.online.tableau.com&apos;&gt;&#10;    &lt;_.fcp.ObjectModelEncapsulateLegacy.false...relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;_.fcp.ObjectModelEncapsulateLegacy.true...relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[CC_CALL_CENTER_ID]&apos; value=&apos;[sqlproxy].[CC_CALL_CENTER_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_CALL_CENTER_SK]&apos; value=&apos;[sqlproxy].[CC_CALL_CENTER_SK]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_CITY]&apos; value=&apos;[sqlproxy].[CC_CITY]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_CLASS]&apos; value=&apos;[sqlproxy].[CC_CLASS]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_CLOSED_DATE_SK]&apos; value=&apos;[sqlproxy].[CC_CLOSED_DATE_SK]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_COMPANY]&apos; value=&apos;[sqlproxy].[CC_COMPANY]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_COMPANY_NAME]&apos; value=&apos;[sqlproxy].[CC_COMPANY_NAME]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_COUNTRY]&apos; value=&apos;[sqlproxy].[CC_COUNTRY]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_COUNTY]&apos; value=&apos;[sqlproxy].[CC_COUNTY]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_DIVISION]&apos; value=&apos;[sqlproxy].[CC_DIVISION]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_DIVISION_NAME]&apos; value=&apos;[sqlproxy].[CC_DIVISION_NAME]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_EMPLOYEES]&apos; value=&apos;[sqlproxy].[CC_EMPLOYEES]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_GMT_OFFSET]&apos; value=&apos;[sqlproxy].[CC_GMT_OFFSET]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_HOURS]&apos; value=&apos;[sqlproxy].[CC_HOURS]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_MANAGER]&apos; value=&apos;[sqlproxy].[CC_MANAGER]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_MARKET_MANAGER]&apos; value=&apos;[sqlproxy].[CC_MARKET_MANAGER]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_MKT_CLASS]&apos; value=&apos;[sqlproxy].[CC_MKT_CLASS]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_MKT_DESC]&apos; value=&apos;[sqlproxy].[CC_MKT_DESC]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_MKT_ID]&apos; value=&apos;[sqlproxy].[CC_MKT_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_NAME]&apos; value=&apos;[sqlproxy].[CC_NAME]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_OPEN_DATE_SK]&apos; value=&apos;[sqlproxy].[CC_OPEN_DATE_SK]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_REC_END_DATE]&apos; value=&apos;[sqlproxy].[CC_REC_END_DATE]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_REC_START_DATE]&apos; value=&apos;[sqlproxy].[CC_REC_START_DATE]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_SQ_FT]&apos; value=&apos;[sqlproxy].[CC_SQ_FT]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_STATE]&apos; value=&apos;[sqlproxy].[CC_STATE]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_STREET_NAME]&apos; value=&apos;[sqlproxy].[CC_STREET_NAME]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_STREET_NUMBER]&apos; value=&apos;[sqlproxy].[CC_STREET_NUMBER]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_STREET_TYPE]&apos; value=&apos;[sqlproxy].[CC_STREET_TYPE]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_SUITE_NUMBER]&apos; value=&apos;[sqlproxy].[CC_SUITE_NUMBER]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_TAX_PERCENTAGE]&apos; value=&apos;[sqlproxy].[CC_TAX_PERCENTAGE]&apos; /&gt;&#10;      &lt;map key=&apos;[CC_ZIP]&apos; value=&apos;[sqlproxy].[CC_ZIP]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Call Center Id&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_CALL_CENTER_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Call Center Sk&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_CALL_CENTER_SK]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc City&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_CITY]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[City].[Name]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Class&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_CLASS]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Closed Date Sk&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_CLOSED_DATE_SK]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Company&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_COMPANY]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Company Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_COMPANY_NAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Country&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_COUNTRY]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[Country].[ISO3166_2]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc County&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_COUNTY]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[County].[Name]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Division&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_DIVISION]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Division Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_DIVISION_NAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Employees&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_EMPLOYEES]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Gmt Offset&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_GMT_OFFSET]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Hours&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_HOURS]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Manager&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_MANAGER]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Market Manager&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_MARKET_MANAGER]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Mkt Class&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_MKT_CLASS]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Mkt Desc&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_MKT_DESC]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Mkt Id&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[CC_MKT_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_NAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Open Date Sk&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_OPEN_DATE_SK]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Cc Rec End Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[CC_REC_END_DATE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Cc Rec Start Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[CC_REC_START_DATE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Sq Ft&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_SQ_FT]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc State&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_STATE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Street Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_STREET_NAME]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Street Number&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_STREET_NUMBER]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Street Type&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_STREET_TYPE]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Suite Number&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_SUITE_NUMBER]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Cc Tax Percentage&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[CC_TAX_PERCENTAGE]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Cc Zip&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[CC_ZIP]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; semantic-role=&apos;[ZipCode].[Name]&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;_.fcp.ObjectModelTableType.true...column aggregation=&apos;Count&apos; caption=&apos;CALL_CENTER&apos; datatype=&apos;table&apos; default-type=&apos;quantitative&apos; name=&apos;[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;table&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;layout _.fcp.SchemaViewerObjectModel.false...dim-percentage=&apos;0.5&apos; _.fcp.SchemaViewerObjectModel.false...measure-percentage=&apos;0.4&apos; dim-ordering=&apos;alphabetic&apos; measure-ordering=&apos;alphabetic&apos; show-structure=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;_.fcp.ObjectModelEncapsulateLegacy.true...object-graph&gt;&#10;    &lt;objects&gt;&#10;      &lt;object caption=&apos;CALL_CENTER&apos; id=&apos;CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36&apos;&gt;&#10;        &lt;properties context=&apos;&apos;&gt;&#10;          &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;        &lt;/properties&gt;&#10;      &lt;/object&gt;&#10;    &lt;/objects&gt;&#10;  &lt;/_.fcp.ObjectModelEncapsulateLegacy.true...object-graph&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+          <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;snowflake&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;  &lt;overlay-dialect-set&gt;&#10;    &lt;overlay-dialect class=&apos;vizengine&apos; version=&apos;0.1.0&apos;&gt;&#10;    &lt;/overlay-dialect&gt;&#10;  &lt;/overlay-dialect-set&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+          <attribute datatype='boolean' name='extract-active'>false</attribute>
+          <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+        </attributes>
+      </metadata-record>
     </metadata-records>
   </connection>
+  <overridable-settings>
+    <date-options fiscal-year-start='january' start-of-week='sunday' />
+    <default-date-format />
+    <default-calendar-type>Gregorian</default-calendar-type>
+  </overridable-settings>
   <aliases enabled='yes' />
-  <column caption='Cc Call Center Id' datatype='string' name='[CC_CALL_CENTER_ID]' role='dimension' type='nominal' />
-  <column caption='Cc Call Center Sk' datatype='integer' name='[CC_CALL_CENTER_SK]' role='measure' type='quantitative' />
-  <column caption='Cc City' datatype='string' name='[CC_CITY]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
-  <column caption='Cc Class' datatype='string' name='[CC_CLASS]' role='dimension' type='nominal' />
-  <column caption='Cc Closed Date Sk' datatype='integer' name='[CC_CLOSED_DATE_SK]' role='measure' type='quantitative' />
-  <column caption='Cc Company' datatype='integer' name='[CC_COMPANY]' role='measure' type='quantitative' />
-  <column caption='Cc Company Name' datatype='string' name='[CC_COMPANY_NAME]' role='dimension' type='nominal' />
-  <column caption='Cc Country' datatype='string' name='[CC_COUNTRY]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
-  <column caption='Cc County' datatype='string' name='[CC_COUNTY]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
-  <column caption='Cc Division' datatype='integer' name='[CC_DIVISION]' role='measure' type='quantitative' />
-  <column caption='Cc Division Name' datatype='string' name='[CC_DIVISION_NAME]' role='dimension' type='nominal' />
-  <column caption='Cc Employees' datatype='integer' name='[CC_EMPLOYEES]' role='measure' type='quantitative' />
-  <column caption='Cc Gmt Offset' datatype='real' name='[CC_GMT_OFFSET]' role='measure' type='quantitative' />
-  <column caption='Cc Hours' datatype='string' name='[CC_HOURS]' role='dimension' type='nominal' />
-  <column caption='Cc Manager' datatype='string' name='[CC_MANAGER]' role='dimension' type='nominal' />
-  <column caption='Cc Market Manager' datatype='string' name='[CC_MARKET_MANAGER]' role='dimension' type='nominal' />
-  <column caption='Cc Mkt Class' datatype='string' name='[CC_MKT_CLASS]' role='dimension' type='nominal' />
-  <column caption='Cc Mkt Desc' datatype='string' name='[CC_MKT_DESC]' role='dimension' type='nominal' />
-  <column caption='Cc Mkt Id' datatype='integer' name='[CC_MKT_ID]' role='dimension' type='ordinal' />
-  <column caption='Cc Name' datatype='string' name='[CC_NAME]' role='dimension' type='nominal' />
-  <column caption='Cc Open Date Sk' datatype='integer' name='[CC_OPEN_DATE_SK]' role='measure' type='quantitative' />
-  <column caption='Cc Rec End Date' datatype='date' name='[CC_REC_END_DATE]' role='dimension' type='ordinal' />
-  <column caption='Cc Rec Start Date' datatype='date' name='[CC_REC_START_DATE]' role='dimension' type='ordinal' />
-  <column caption='Cc Sq Ft' datatype='integer' name='[CC_SQ_FT]' role='measure' type='quantitative' />
-  <column caption='Cc State' datatype='string' name='[CC_STATE]' role='dimension' type='nominal' />
-  <column caption='Cc Street Name' datatype='string' name='[CC_STREET_NAME]' role='dimension' type='nominal' />
-  <column caption='Cc Street Number' datatype='string' name='[CC_STREET_NUMBER]' role='dimension' type='nominal' />
-  <column caption='Cc Street Type' datatype='string' name='[CC_STREET_TYPE]' role='dimension' type='nominal' />
-  <column caption='Cc Suite Number' datatype='string' name='[CC_SUITE_NUMBER]' role='dimension' type='nominal' />
-  <column caption='Cc Tax Percentage' datatype='real' name='[CC_TAX_PERCENTAGE]' role='measure' type='quantitative' />
-  <column caption='Cc Zip' datatype='string' name='[CC_ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' />
-  <_.fcp.ObjectModelTableType.true...column caption='CALL_CENTER' datatype='table' name='[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]' role='measure' type='quantitative' />
+  <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' layered='true' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Call Center Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_CALL_CENTER_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc City' datatype='string' default-type='nominal' layered='true' name='[CC_CITY]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Class' datatype='string' default-type='nominal' layered='true' name='[CC_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Closed Date Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_CLOSED_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Company' datatype='integer' default-type='quantitative' layered='true' name='[CC_COMPANY]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Company Name' datatype='string' default-type='nominal' layered='true' name='[CC_COMPANY_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Country' datatype='string' default-type='nominal' layered='true' name='[CC_COUNTRY]' pivot='key' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc County' datatype='string' default-type='nominal' layered='true' name='[CC_COUNTY]' pivot='key' role='dimension' semantic-role='[County].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Division Name' datatype='string' default-type='nominal' layered='true' name='[CC_DIVISION_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Employees' datatype='integer' default-type='quantitative' layered='true' name='[CC_EMPLOYEES]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Gmt Offset' datatype='real' default-type='quantitative' layered='true' name='[CC_GMT_OFFSET]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Hours' datatype='string' default-type='nominal' layered='true' name='[CC_HOURS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Manager' datatype='string' default-type='nominal' layered='true' name='[CC_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Market Manager' datatype='string' default-type='nominal' layered='true' name='[CC_MARKET_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Class' datatype='string' default-type='nominal' layered='true' name='[CC_MKT_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Desc' datatype='string' default-type='nominal' layered='true' name='[CC_MKT_DESC]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Mkt Id' datatype='integer' default-type='ordinal' layered='true' name='[CC_MKT_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Name' datatype='string' default-type='nominal' layered='true' name='[CC_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Open Date Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_OPEN_DATE_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Year' caption='Cc Rec End Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_END_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+  <column aggregation='Year' caption='Cc Rec Start Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_START_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Sq Ft' datatype='integer' default-type='quantitative' layered='true' name='[CC_SQ_FT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc State' datatype='string' default-type='nominal' layered='true' name='[CC_STATE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Number' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Street Type' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_TYPE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Suite Number' datatype='string' default-type='nominal' layered='true' name='[CC_SUITE_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Sum' caption='Cc Tax Percentage' datatype='real' default-type='quantitative' layered='true' name='[CC_TAX_PERCENTAGE]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Zip' datatype='string' default-type='nominal' layered='true' name='[CC_ZIP]' pivot='key' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
+  <_.fcp.ObjectModelTableType.true...column aggregation='Count' caption='CALL_CENTER' datatype='table' default-type='quantitative' layered='true' name='[__tableau_internal_object_id__].[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]' pivot='key' role='measure' type='quantitative' user-datatype='table' visual-totals='Default' />
   <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
   <semantic-values>
     <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
@@ -632,7 +728,7 @@
     <objects>
       <object caption='CALL_CENTER' id='CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36'>
         <properties context=''>
-          <relation connection='snowflake.0xwys441ecf27e14hkeuy13vhhkq' name='CALL_CENTER' table='[TPCDS_SF10TCL].[CALL_CENTER]' type='table' />
+          <relation name='sqlproxy' table='[sqlproxy]' type='table' />
         </properties>
       </object>
     </objects>
