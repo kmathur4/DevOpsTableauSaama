@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
-<!-- build 20203.20.1110.1623                               -->
-<workbook original-version='18.1' source-build='2020.3.3 (20203.20.1110.1623)' source-platform='win' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<!-- build 20204.20.1106.0321                               -->
+<workbook original-version='18.1' source-build='2020.4.0 (20204.20.1106.0321)' source-platform='win' version='18.1' xml:base='https://prod-apnortheast-a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <ISO8601DefaultCalendarPref />
     <IntuitiveSorting />
@@ -13,38 +13,18 @@
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
-  <repository-location id='TableauWorkbookConnectedToPublishedPackagedDStwb_16063030081210' path='/t/demo27/workbooks' revision='1.0' site='demo27' />
+  <repository-location id='S12-SnowflakeWorkbookConnectedToPublishedExtractDStwb' path='/t/devopswithtableau/workbooks' revision='1.1' site='devopswithtableau' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx) | Project : Scenario1-Snowflake Extract Datasource' inline='true' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' version='18.1'>
-      <repository-location id='S11-SnowflakePackagedExtractDatasourcetdsx' path='/t/devopssaama/datasources' revision='1.0' site='devopssaama' />
-      <connection channel='https' class='sqlproxy' dbname='S11-SnowflakePackagedExtractDatasourcetdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' server-ds-friendly-name='S11-SnowflakePackagedExtractDatasource(tdsx) | Project : Scenario1-Snowflake Extract Datasource' server-oauth='' username='kmathur' workgroup-auth-mode='prompt'>
+    <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx)' inline='true' name='sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq' version='18.1'>
+      <repository-location id='S11-SnowflakePackagedExtractDatasourcetdsx_16104777031130' path='/t/devopswithtableau/datasources' revision='1.2' site='devopswithtableau' />
+      <connection channel='https' class='sqlproxy' dbname='S11-SnowflakePackagedExtractDatasourcetdsx_16104777031130' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com' server-oauth='' username='kmathur' workgroup-auth-mode='prompt'>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <metadata-records>
-          <metadata-record class='column'>
-            <remote-name>CC_CALL_CENTER_ID</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[CC_CALL_CENTER_ID]</local-name>
-            <parent-name>[sqlproxy]</parent-name>
-            <remote-alias>CC_CALL_CENTER_ID</remote-alias>
-            <ordinal>1</ordinal>
-            <layered>true</layered>
-            <caption>Cc Call Center Id</caption>
-            <family>CALL_CENTER</family>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='binary' />
-            <attributes>
-              <attribute datatype='integer' name='field-type'>2</attribute>
-              <attribute datatype='integer' name='role'>0</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[CALL_CENTER (TPCDS_SF10TCL.CALL_CENTER)_816E61D4B1EC47B884FC063E80B80D36]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
           <metadata-record class='measure'>
             <remote-name>CC_CALL_CENTER_SK</remote-name>
             <remote-type>20</remote-type>
@@ -69,7 +49,7 @@
             <local-name>[CC_CITY]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_CITY</remote-alias>
-            <ordinal>24</ordinal>
+            <ordinal>23</ordinal>
             <layered>true</layered>
             <caption>Cc City</caption>
             <family>CALL_CENTER</family>
@@ -89,7 +69,7 @@
             <local-name>[CC_CLASS]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_CLASS</remote-alias>
-            <ordinal>7</ordinal>
+            <ordinal>6</ordinal>
             <layered>true</layered>
             <caption>Cc Class</caption>
             <family>CALL_CENTER</family>
@@ -109,7 +89,7 @@
             <local-name>[CC_CLOSED_DATE_SK]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_CLOSED_DATE_SK</remote-alias>
-            <ordinal>4</ordinal>
+            <ordinal>3</ordinal>
             <layered>true</layered>
             <caption>Cc Closed Date Sk</caption>
             <family>CALL_CENTER</family>
@@ -127,7 +107,7 @@
             <local-name>[CC_COMPANY]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_COMPANY</remote-alias>
-            <ordinal>18</ordinal>
+            <ordinal>17</ordinal>
             <layered>true</layered>
             <caption>Cc Company</caption>
             <family>CALL_CENTER</family>
@@ -145,7 +125,7 @@
             <local-name>[CC_COMPANY_NAME]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_COMPANY_NAME</remote-alias>
-            <ordinal>19</ordinal>
+            <ordinal>18</ordinal>
             <layered>true</layered>
             <caption>Cc Company Name</caption>
             <family>CALL_CENTER</family>
@@ -165,7 +145,7 @@
             <local-name>[CC_COUNTRY]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_COUNTRY</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>27</ordinal>
             <layered>true</layered>
             <caption>Cc Country</caption>
             <family>CALL_CENTER</family>
@@ -185,7 +165,7 @@
             <local-name>[CC_COUNTY]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_COUNTY</remote-alias>
-            <ordinal>25</ordinal>
+            <ordinal>24</ordinal>
             <layered>true</layered>
             <caption>Cc County</caption>
             <family>CALL_CENTER</family>
@@ -205,7 +185,7 @@
             <local-name>[CC_DIVISION]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_DIVISION</remote-alias>
-            <ordinal>16</ordinal>
+            <ordinal>15</ordinal>
             <layered>true</layered>
             <caption>Cc Division</caption>
             <family>CALL_CENTER</family>
@@ -223,7 +203,7 @@
             <local-name>[CC_DIVISION_NAME]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_DIVISION_NAME</remote-alias>
-            <ordinal>17</ordinal>
+            <ordinal>16</ordinal>
             <layered>true</layered>
             <caption>Cc Division Name</caption>
             <family>CALL_CENTER</family>
@@ -243,7 +223,7 @@
             <local-name>[CC_EMPLOYEES]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_EMPLOYEES</remote-alias>
-            <ordinal>8</ordinal>
+            <ordinal>7</ordinal>
             <layered>true</layered>
             <caption>Cc Employees</caption>
             <family>CALL_CENTER</family>
@@ -261,7 +241,7 @@
             <local-name>[CC_GMT_OFFSET]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_GMT_OFFSET</remote-alias>
-            <ordinal>29</ordinal>
+            <ordinal>28</ordinal>
             <layered>true</layered>
             <caption>Cc Gmt Offset</caption>
             <family>CALL_CENTER</family>
@@ -279,7 +259,7 @@
             <local-name>[CC_HOURS]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_HOURS</remote-alias>
-            <ordinal>10</ordinal>
+            <ordinal>9</ordinal>
             <layered>true</layered>
             <caption>Cc Hours</caption>
             <family>CALL_CENTER</family>
@@ -299,7 +279,7 @@
             <local-name>[CC_MANAGER]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_MANAGER</remote-alias>
-            <ordinal>11</ordinal>
+            <ordinal>10</ordinal>
             <layered>true</layered>
             <caption>Cc Manager</caption>
             <family>CALL_CENTER</family>
@@ -319,7 +299,7 @@
             <local-name>[CC_MARKET_MANAGER]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_MARKET_MANAGER</remote-alias>
-            <ordinal>15</ordinal>
+            <ordinal>14</ordinal>
             <layered>true</layered>
             <caption>Cc Market Manager</caption>
             <family>CALL_CENTER</family>
@@ -339,7 +319,7 @@
             <local-name>[CC_MKT_CLASS]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_MKT_CLASS</remote-alias>
-            <ordinal>13</ordinal>
+            <ordinal>12</ordinal>
             <layered>true</layered>
             <caption>Cc Mkt Class</caption>
             <family>CALL_CENTER</family>
@@ -359,7 +339,7 @@
             <local-name>[CC_MKT_DESC]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_MKT_DESC</remote-alias>
-            <ordinal>14</ordinal>
+            <ordinal>13</ordinal>
             <layered>true</layered>
             <caption>Cc Mkt Desc</caption>
             <family>CALL_CENTER</family>
@@ -379,7 +359,7 @@
             <local-name>[CC_MKT_ID]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_MKT_ID</remote-alias>
-            <ordinal>12</ordinal>
+            <ordinal>11</ordinal>
             <layered>true</layered>
             <caption>Cc Mkt Id</caption>
             <family>CALL_CENTER</family>
@@ -398,7 +378,7 @@
             <local-name>[CC_NAME]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_NAME</remote-alias>
-            <ordinal>6</ordinal>
+            <ordinal>5</ordinal>
             <layered>true</layered>
             <caption>Cc Name</caption>
             <family>CALL_CENTER</family>
@@ -418,7 +398,7 @@
             <local-name>[CC_OPEN_DATE_SK]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_OPEN_DATE_SK</remote-alias>
-            <ordinal>5</ordinal>
+            <ordinal>4</ordinal>
             <layered>true</layered>
             <caption>Cc Open Date Sk</caption>
             <family>CALL_CENTER</family>
@@ -436,7 +416,7 @@
             <local-name>[CC_REC_END_DATE]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_REC_END_DATE</remote-alias>
-            <ordinal>3</ordinal>
+            <ordinal>2</ordinal>
             <layered>true</layered>
             <caption>Cc Rec End Date</caption>
             <family>CALL_CENTER</family>
@@ -455,7 +435,7 @@
             <local-name>[CC_REC_START_DATE]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_REC_START_DATE</remote-alias>
-            <ordinal>2</ordinal>
+            <ordinal>1</ordinal>
             <layered>true</layered>
             <caption>Cc Rec Start Date</caption>
             <family>CALL_CENTER</family>
@@ -474,7 +454,7 @@
             <local-name>[CC_SQ_FT]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_SQ_FT</remote-alias>
-            <ordinal>9</ordinal>
+            <ordinal>8</ordinal>
             <layered>true</layered>
             <caption>Cc Sq Ft</caption>
             <family>CALL_CENTER</family>
@@ -492,7 +472,7 @@
             <local-name>[CC_STATE]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_STATE</remote-alias>
-            <ordinal>26</ordinal>
+            <ordinal>25</ordinal>
             <layered>true</layered>
             <caption>Cc State</caption>
             <family>CALL_CENTER</family>
@@ -512,7 +492,7 @@
             <local-name>[CC_STREET_NAME]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_STREET_NAME</remote-alias>
-            <ordinal>21</ordinal>
+            <ordinal>20</ordinal>
             <layered>true</layered>
             <caption>Cc Street Name</caption>
             <family>CALL_CENTER</family>
@@ -532,7 +512,7 @@
             <local-name>[CC_STREET_NUMBER]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_STREET_NUMBER</remote-alias>
-            <ordinal>20</ordinal>
+            <ordinal>19</ordinal>
             <layered>true</layered>
             <caption>Cc Street Number</caption>
             <family>CALL_CENTER</family>
@@ -552,7 +532,7 @@
             <local-name>[CC_STREET_TYPE]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_STREET_TYPE</remote-alias>
-            <ordinal>22</ordinal>
+            <ordinal>21</ordinal>
             <layered>true</layered>
             <caption>Cc Street Type</caption>
             <family>CALL_CENTER</family>
@@ -572,7 +552,7 @@
             <local-name>[CC_SUITE_NUMBER]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_SUITE_NUMBER</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>22</ordinal>
             <layered>true</layered>
             <caption>Cc Suite Number</caption>
             <family>CALL_CENTER</family>
@@ -592,7 +572,7 @@
             <local-name>[CC_TAX_PERCENTAGE]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_TAX_PERCENTAGE</remote-alias>
-            <ordinal>30</ordinal>
+            <ordinal>29</ordinal>
             <layered>true</layered>
             <caption>Cc Tax Percentage</caption>
             <family>CALL_CENTER</family>
@@ -610,7 +590,7 @@
             <local-name>[CC_ZIP]</local-name>
             <parent-name>[sqlproxy]</parent-name>
             <remote-alias>CC_ZIP</remote-alias>
-            <ordinal>27</ordinal>
+            <ordinal>26</ordinal>
             <layered>true</layered>
             <caption>Cc Zip</caption>
             <family>CALL_CENTER</family>
@@ -637,6 +617,7 @@
               <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
               <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
               <attribute datatype='boolean' name='CAP_QUERY_CASE_INSENSITIVE_CONTAINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_IGNORE_HINT_CHECK_NOT_NULL'>true</attribute>
               <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
               <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
               <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
@@ -657,12 +638,11 @@
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
   </document-format-change-manifest>
-  <repository-location id='S11-SnowflakePackagedExtractDatasourcetdsx' path='/t/devopssaama/datasources' revision='1.0' site='devopssaama' />
-  <connection channel='https' class='sqlproxy' dbname='S11-SnowflakePackagedExtractDatasourcetdsx' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com'>
+  <repository-location id='S11-SnowflakePackagedExtractDatasourcetdsx_16104777031130' path='/t/devopswithtableau/datasources' revision='1.2' site='devopswithtableau' />
+  <connection channel='https' class='sqlproxy' dbname='S11-SnowflakePackagedExtractDatasourcetdsx_16104777031130' directory='/dataserver' port='443' server='prod-apnortheast-a.online.tableau.com'>
     <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='sqlproxy' table='[sqlproxy]' type='table' />
     <cols>
-      <map key='[CC_CALL_CENTER_ID]' value='[sqlproxy].[CC_CALL_CENTER_ID]' />
       <map key='[CC_CALL_CENTER_SK]' value='[sqlproxy].[CC_CALL_CENTER_SK]' />
       <map key='[CC_CITY]' value='[sqlproxy].[CC_CITY]' />
       <map key='[CC_CLASS]' value='[sqlproxy].[CC_CLASS]' />
@@ -696,7 +676,7 @@
     </cols>
   </connection>
   <aliases enabled='yes' />
-  <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+  <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' hidden='true' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
   <column aggregation='Sum' caption='Cc Call Center Sk' datatype='integer' default-type='quantitative' name='[CC_CALL_CENTER_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
   <column aggregation='Count' caption='Cc City' datatype='string' default-type='nominal' name='[CC_CITY]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
   <column aggregation='Count' caption='Cc Class' datatype='string' default-type='nominal' name='[CC_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
@@ -750,7 +730,7 @@
 ]]>&quot;</attribute>
               <attribute datatype='boolean' name='extract-active'>true</attribute>
               <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
-              <attribute datatype='string' name='update-time'>&quot;11/24/2020 10:44:51 AM&quot;</attribute>
+              <attribute datatype='string' name='update-time'>&quot;1/13/2021 4:11:45 AM&quot;</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
@@ -761,7 +741,6 @@
         <default-calendar-type>Gregorian</default-calendar-type>
       </overridable-settings>
       <aliases enabled='yes' />
-      <column aggregation='Count' caption='Cc Call Center Id' datatype='string' default-type='nominal' layered='true' name='[CC_CALL_CENTER_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Sum' caption='Cc Call Center Sk' datatype='integer' default-type='quantitative' layered='true' name='[CC_CALL_CENTER_SK]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
       <column aggregation='Count' caption='Cc City' datatype='string' default-type='nominal' layered='true' name='[CC_CITY]' pivot='key' role='dimension' semantic-role='[City].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' caption='Cc Class' datatype='string' default-type='nominal' layered='true' name='[CC_CLASS]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
@@ -785,7 +764,7 @@
       <column aggregation='Year' caption='Cc Rec End Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_END_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
       <column aggregation='Year' caption='Cc Rec Start Date' datatype='date' default-type='ordinal' layered='true' name='[CC_REC_START_DATE]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
       <column aggregation='Sum' caption='Cc Sq Ft' datatype='integer' default-type='quantitative' layered='true' name='[CC_SQ_FT]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
-      <column aggregation='Count' caption='Cc State' datatype='string' default-type='nominal' layered='true' name='[CC_STATE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Cc State' datatype='string' default-type='nominal' layered='true' name='[CC_STATE]' pivot='key' role='dimension' semantic-role='[State].[Name]' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' caption='Cc Street Number' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NUMBER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
       <column aggregation='Count' caption='Cc Street Type' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_TYPE]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
@@ -813,16 +792,16 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx) | Project : Scenario1-Snowflake Extract Datasource' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' />
+            <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx)' name='sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq' />
           </datasources>
-          <datasource-dependencies datasource='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g'>
+          <datasource-dependencies datasource='sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq'>
             <column aggregation='Sum' caption='Cc Division' datatype='integer' default-type='quantitative' layered='true' name='[CC_DIVISION]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
             <column aggregation='Count' caption='Cc Street Name' datatype='string' default-type='nominal' layered='true' name='[CC_STREET_NAME]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column-instance column='[CC_STREET_NAME]' derivation='None' name='[none:CC_STREET_NAME:nk]' pivot='key' type='nominal' />
             <column-instance column='[CC_DIVISION]' derivation='Sum' name='[sum:CC_DIVISION:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[none:CC_STREET_NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[sum:CC_DIVISION:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[none:CC_STREET_NAME:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[sum:CC_DIVISION:qk]' shelf='rows' />
           </shelf-sorts>
           <aggregation value='true' />
         </view>
@@ -841,8 +820,8 @@
             </style>
           </pane>
         </panes>
-        <rows>[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[none:CC_STREET_NAME:nk]</rows>
-        <cols>[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[sum:CC_DIVISION:qk]</cols>
+        <rows>[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[none:CC_STREET_NAME:nk]</rows>
+        <cols>[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[sum:CC_DIVISION:qk]</cols>
       </table>
       <simple-id uuid='{62C97337-8E4C-4A7B-A18D-8A644AED6C4A}' />
     </worksheet>
@@ -850,22 +829,22 @@
       <table>
         <view>
           <datasources>
-            <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx) | Project : Scenario1-Snowflake Extract Datasource' name='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g' />
+            <datasource caption='S11-SnowflakePackagedExtractDatasource(tdsx)' name='sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq' />
           </datasources>
-          <datasource-dependencies datasource='sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g'>
+          <datasource-dependencies datasource='sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq'>
             <column aggregation='Count' caption='Cc Manager' datatype='string' default-type='nominal' layered='true' name='[CC_MANAGER]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
             <column aggregation='Sum' caption='Cc Tax Percentage' datatype='real' default-type='quantitative' layered='true' name='[CC_TAX_PERCENTAGE]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
             <column-instance column='[CC_MANAGER]' derivation='None' name='[none:CC_MANAGER:nk]' pivot='key' type='nominal' />
             <column-instance column='[CC_TAX_PERCENTAGE]' derivation='Sum' name='[sum:CC_TAX_PERCENTAGE:qk]' pivot='key' type='quantitative' />
           </datasource-dependencies>
           <shelf-sorts>
-            <shelf-sort-v2 dimension-to-sort='[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[none:CC_MANAGER:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[sum:CC_TAX_PERCENTAGE:qk]' shelf='rows' />
+            <shelf-sort-v2 dimension-to-sort='[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[none:CC_MANAGER:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[sum:CC_TAX_PERCENTAGE:qk]' shelf='rows' />
           </shelf-sorts>
           <aggregation value='true' />
         </view>
         <style>
           <style-rule element='label'>
-            <format attr='text-format' field='[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[sum:CC_TAX_PERCENTAGE:qk]' value='p0.00%' />
+            <format attr='text-format' field='[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[sum:CC_TAX_PERCENTAGE:qk]' value='p0.00%' />
           </style-rule>
         </style>
         <panes>
@@ -876,8 +855,8 @@
             <mark class='Automatic' />
           </pane>
         </panes>
-        <rows>[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[none:CC_MANAGER:nk]</rows>
-        <cols>[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[sum:CC_TAX_PERCENTAGE:qk]</cols>
+        <rows>[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[none:CC_MANAGER:nk]</rows>
+        <cols>[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[sum:CC_TAX_PERCENTAGE:qk]</cols>
       </table>
       <simple-id uuid='{E3B16ABD-68E2-4E9D-A65C-186FAF389836}' />
     </worksheet>
@@ -907,7 +886,7 @@
       <viewpoint>
         <highlight>
           <color-one-way>
-            <field>[sqlproxy.1veahsi0pmwxh41bsu6hj027nf0g].[none:CC_STREET_NAME:nk]</field>
+            <field>[sqlproxy.09ag51h0oneo6k1c41ttj0zw40vq].[none:CC_STREET_NAME:nk]</field>
           </color-one-way>
         </highlight>
       </viewpoint>
